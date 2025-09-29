@@ -1,0 +1,23 @@
+Tip Calculator Project – Closure Notes
+
+Strengths:
+- Broke code into functions.
+- Used input validation with loops and try/except.
+- Used dictionary mapping for tip choices.
+- Explained each line for better understanding.
+
+Weaknesses:
+- Initially placed input() outside loop.
+- Used isdigit() which fails for floats.
+- Function names didn’t match behavior (tip_percentage returned multipliers).
+- Some unnecessary code (break after return, invalid import).
+
+Lessons Learned:
+- continue restarts the loop, return exits function.
+- try/except is better for numeric conversion than isdigit().
+- Dictionaries are useful for clean option mapping.
+- Clear naming avoids confusion.
+- Handle common input mistakes, not all possible ones.
+
+End of Project.
+
