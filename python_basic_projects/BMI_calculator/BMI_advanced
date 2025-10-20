@@ -1,0 +1,244 @@
+"""
+advanced.py — Advanced BMI Calculator (single-file reference)
+
+Features:
+- Robust input parsing (kg/cm or lb/in), accepts plain numbers or with units.
+- No-regex validation (float conversion + decimal checks).
+- Unit conversion helpers (lbs/in -> kg/m).
+- Extended BMI classifications (including obesity classes).
+- Computes "target weight range" for a healthy BMI given height.
+- Saves results to a CSV history file (./bmi_history.csv).
+- CLI mode via argparse (interactive by default; accepts --weight/--height to run once).
+- Logging for debugging.
+- Type hints and docstrings for readability.
+"""
+
+from __future__ import annotations
+import csv
+import logging
+from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from typing import Tuple, Optional
+import argparse
+
+# ---------- Config ----------
+HISTORY_PATH = Path("bmi_history.csv")
+LOG_LEVEL = logging.INFO
+logging.basicConfig(level=LOG_LEVEL, format="%(levelname)s: %(message)s")
+
+
+# ---------- Utilities ----------
+def to_float_with_two_decimal_check(s: str) -> float:
+    """
+    Convert string to float and ensure at most two decimal places.
+    Raises ValueError on invalid input.
+    """
+    s = s.strip()
+    value = float(s)  # may raise ValueError
+    # allow integers with no dot
+    if '.' in s and len(s.split('.')[-1]) > 2:
+        raise ValueError("Use up to 2 decimal places only.")
+    return value
+
+
+def lbs_to_kg(lbs: float) -> float:
+    return lbs * 0.45359237
+
+
+def inches_to_m(inches: float) -> float:
+    return inches * 0.0254
+
+
+def cm_to_m(cm: float) -> float:
+    return cm / 100.0
+
+
+# ---------- Parsing ----------
+def parse_weight(input_str: str) -> Tuple[float, str]:
+    """
+    Accepts inputs like:
+      - "70", "70.5"        -> assumed kg
+      - "70 kg", "70kg"
+      - "154 lb", "154lbs"
+    Returns (weight_in_kg, unit_detected)
+    """
+    s = input_str.strip().lower().replace(" ", "")
+    # detect units
+    if s.endswith("kg"):
+        val = to_float_with_two_decimal_check(s[:-2])
+        return val, "kg"
+    if s.endswith("lb") or s.endswith("lbs"):
+        core = s[:-2] if s.endswith("lb") else s[:-3]
+        val = to_float_with_two_decimal_check(core)
+        return lbs_to_kg(val), "lb"
+    # no unit: assume kg (documented default)
+    val = to_float_with_two_decimal_check(s)
+    return val, "kg"
+
+
+def parse_height(input_str: str) -> Tuple[float, str]:
+    """
+    Accepts inputs like:
+      - "1.72", "1.72m"     -> assumed meters
+      - "172", "172cm"      -> assumed centimeters if integer > 3
+      - "68in", "68 in"     -> inches
+    Returns (height_in_meters, unit_detected)
+    """
+    s = input_str.strip().lower().replace(" ", "")
+    if s.endswith("m"):
+        val = to_float_with_two_decimal_check(s[:-1])
+        return val, "m"
+    if s.endswith("cm"):
+        val = to_float_with_two_decimal_check(s[:-2])
+        return cm_to_m(val), "cm"
+    if s.endswith("in") or s.endswith("inch") or s.endswith("inches"):
+        core = s[:-2] if s.endswith("in") else s[:-5]
+        val = to_float_with_two_decimal_check(core)
+        return inches_to_m(val), "in"
+    # no unit: heuristics:
+    # if value >= 3 assume centimeters (e.g., 172 -> 172 cm)
+    val = to_float_with_two_decimal_check(s)
+    if val > 3:  # likely cm
+        return cm_to_m(val), "cm"
+    return val, "m"
+
+
+# ---------- Core Logic ----------
+def calculate_bmi(weight_kg: float, height_m: float) -> float:
+    if height_m == 0:
+        raise ValueError("Height cannot be zero.")
+    return weight_kg / (height_m ** 2)
+
+
+@dataclass
+class BmiClassification:
+    label: str
+    advice: str
+
+
+def classify_bmi(bmi: float) -> BmiClassification:
+    # Using WHO-like categories with obesity classes
+    if bmi < 18.5:
+        return BmiClassification("Underweight", "Consider gaining weight healthily; consult a dietitian.")
+    if 18.5 <= bmi < 25:
+        return BmiClassification("Normal weight", "Maintain your lifestyle. Good job!")
+    if 25 <= bmi < 30:
+        return BmiClassification("Overweight", "Increase physical activity and monitor diet.")
+    if 30 <= bmi < 35:
+        return BmiClassification("Obesity Class I", "Medical advice recommended; consider lifestyle changes.")
+    if 35 <= bmi < 40:
+        return BmiClassification("Obesity Class II", "See a healthcare provider; structured intervention likely needed.")
+    return BmiClassification("Obesity Class III", "High health risk. Medical attention recommended.")
+
+
+def target_weight_range_for_height(height_m: float, lower_bmi: float = 18.5, upper_bmi: float = 24.9) -> Tuple[float, float]:
+    """
+    Returns target weight (kg) for the healthy BMI range for a given height.
+    """
+    low_w = lower_bmi * (height_m ** 2)
+    high_w = upper_bmi * (height_m ** 2)
+    return round(low_w, 2), round(high_w, 2)
+
+
+# ---------- Persistence ----------
+def append_history(timestamp: datetime, weight_kg: float, height_m: float, bmi: float, category: str) -> None:
+    first_write = not HISTORY_PATH.exists()
+    with HISTORY_PATH.open("a", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        if first_write:
+            writer.writerow(["timestamp", "weight_kg", "height_m", "bmi", "category"])
+        writer.writerow([timestamp.isoformat(), f"{weight_kg:.2f}", f"{height_m:.3f}", f"{bmi:.2f}", category])
+
+
+# ---------- CLI / Interactive ----------
+def interactive_flow() -> None:
+    print("Welcome to the Advanced BMI Calculator\n")
+    print("Input examples:")
+    print(" - Weight: 70 | 70kg | 154lb")
+    print(" - Height: 1.72 | 172cm | 68in\n")
+    while True:
+        try:
+            w_in = input("Enter your weight: ").strip()
+            h_in = input("Enter your height: ").strip()
+            weight_kg, w_unit = parse_weight(w_in)
+            height_m, h_unit = parse_height(h_in)
+
+            if weight_kg <= 0 or height_m <= 0:
+                print("Values must be positive. Try again.\n")
+                continue
+
+            bmi_val = calculate_bmi(weight_kg, height_m)
+            bmi_rounded = round(bmi_val, 2)
+            cls = classify_bmi(bmi_val)
+            low_w, high_w = target_weight_range_for_height(height_m)
+
+            print(f"\n--- Results ---")
+            print(f"Weight (kg): {weight_kg:.2f}  (interpreted from '{w_in}')")
+            print(f"Height (m): {height_m:.3f}  (interpreted from '{h_in}')")
+            print(f"BMI: {bmi_rounded}")
+            print(f"Category: {cls.label}")
+            print(f"Advice: {cls.advice}")
+            print(f"Target weight range for healthy BMI: {low_w} kg — {high_w} kg")
+
+            # Save to history
+            append_history(datetime.now(), weight_kg, height_m, bmi_rounded, cls.label)
+            print(f"\nSaved result to: {HISTORY_PATH.resolve()}\n")
+
+            # Ask to continue or exit
+            cont = input("Calculate again? (y/n): ").strip().lower()
+            if cont != "y":
+                break
+            print()
+
+        except ValueError as exc:
+            print("Input error:", exc)
+            print("Please try again.\n")
+        except Exception as exc:
+            logging.exception("Unexpected error")
+            print("An unexpected error occurred. See log for details.")
+            break
+
+
+def one_shot_from_args(weight_arg: str, height_arg: str) -> None:
+    # weight_arg and height_arg are strings; parse them same as interactive
+    weight_kg, _ = parse_weight(weight_arg)
+    height_m, _ = parse_height(height_arg)
+
+    if weight_kg <= 0 or height_m <= 0:
+        raise ValueError("Values must be positive.")
+
+    bmi_val = calculate_bmi(weight_kg, height_m)
+    bmi_rounded = round(bmi_val, 2)
+    cls = classify_bmi(bmi_val)
+    low_w, high_w = target_weight_range_for_height(height_m)
+
+    print(f"Weight (kg): {weight_kg:.2f}")
+    print(f"Height (m): {height_m:.3f}")
+    print(f"BMI: {bmi_rounded}")
+    print(f"Category: {cls.label}")
+    print(f"Advice: {cls.advice}")
+    print(f"Target weight range: {low_w} kg — {high_w} kg")
+
+    append_history(datetime.now(), weight_kg, height_m, bmi_rounded, cls.label)
+    print(f"Saved to: {HISTORY_PATH.resolve()}")
+
+
+# ---------- Entrypoint ----------
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Advanced BMI Calculator")
+    parser.add_argument("--weight", "-w", help="Weight (e.g., '70', '70kg', '154lb')")
+    parser.add_argument("--height", "-t", help="Height (e.g., '1.72', '172cm', '68in')")
+    args = parser.parse_args()
+
+    try:
+        if args.weight and args.height:
+            one_shot_from_args(args.weight, args.height)
+        else:
+            interactive_flow()
+    except Exception as exc:
+        logging.error("Failed: %s", exc)
+
+
+if __name__ == "__main__":
+    main()

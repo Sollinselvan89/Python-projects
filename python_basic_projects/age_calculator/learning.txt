@@ -1,0 +1,20 @@
+Of course 👍 — here’s a **brief summary** of what you’ve learned in Python:
+
+---
+
+### 🧠 **Python Summary**
+
+* **`input()`** → Always gives a string.
+* **`strptime()` + `.date()`** → Convert string → `datetime.date` object for calculations.
+* **`strftime()`** → Convert date → string (for display only).
+* **Booleans** → `True` = 1, `False` = 0 when used in math.
+* **Age formula** → Subtract 1 if birthday hasn’t happened yet this year.
+* **Type hints** → (`dob: datetime.date -> int`) show expected input & output types — for clarity only.
+* **`try-except`** → Handles errors like wrong date format.
+* **f-strings** → Easy way to print values (`f"Your age is {age}"`).
+* **Good habit** → Keep logic (calculations) and display (print) separate in functions.
+
+---
+
+✅ In short:
+You now know how to **take input safely**, **convert it into usable data**, **do calculations**, **format output cleanly**, and **handle errors** — all with good Python structure.
