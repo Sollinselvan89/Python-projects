@@ -1,0 +1,64 @@
+Got it 👍 — here’s your **refined, balanced summary** — concise, but still complete and meaningful.
+
+---
+
+### 🧮 **GPA Calculator — Learning Summary**
+
+**Objective:**
+Create a GPA calculator that accepts grades and credits for up to 7 subjects, validates all inputs, and computes the semester GPA accurately.
+
+---
+
+**Key Concepts Practiced:**
+
+* **Functions & Modularity:** Split logic into `user_input()`, `calculate_gpa()`, and `main()`.
+* **Loops & Conditionals:** Used nested loops with `break`/`continue` for clean validation.
+* **Exception Handling:** Managed invalid inputs with `try/except ValueError`.
+* **Arithmetic Logic:** Applied weighted average formula for GPA.
+* **Formatting & Output:** Used f-strings and rounding for user clarity.
+
+---
+
+**Main Corrections Made:**
+
+* Fixed function name (`calculate_gpa`) and adjusted `.strip()` placement.
+* Set subject count range to `1–7`.
+* Matched grade and credit validation logic with correct messages.
+* Allowed float credits instead of integers.
+* Added docstrings, blank lines, and consistent indentation (PEP 8).
+* Improved user prompts for clarity and tone.
+
+---
+
+**Concept Reinforcements:**
+
+* Difference between `break` vs `return` understood through debugging.
+* Clearer grasp of input validation and nested loop design.
+* Learned to separate computation from output (clean main function).
+* Gained hands-on practice with debugger — inspecting variable states and flow.
+* Internalized PEP 8 structure: spacing, naming, and comments.
+
+---
+
+**Next Focus:**
+
+* Continue using debugger to analyze logic flow.
+* Next project will introduce **dictionaries (Currency Converter)**.
+* Start preparing for **pytest basics** after next 1–2 projects.
+* Maintain polished docstrings and consistent message tone.
+
+---
+
+**Code Quality Review:**
+
+| Aspect                | Rating       | Comment                                                               |
+| --------------------- | ------------ | --------------------------------------------------------------------- |
+| Logic & Flow          | ⭐⭐⭐⭐☆        | Solid, structured, well-tested with debugger                          |
+| PEP 8 Compliance      | ⭐⭐⭐⭐☆        | Clean layout, consistent spacing                                      |
+| Validation & Handling | ⭐⭐⭐⭐☆        | Robust and user-friendly                                              |
+| Overall Maturity      | **8.5 / 10** | You’ve reached early-intermediate fluency and strong debugging habits |
+
+---
+
+✅ **Summary Insight:**
+You’ve transitioned from writing functional code to writing **structured, readable, and debuggable programs**. Keep reinforcing PEP 8 habits — your current progress shows real professional discipline forming.
