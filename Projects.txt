@@ -1,35 +1,63 @@
 Expanded Mini-Projects Roadmap (Real-World Focus)
 Easy Projects (Week 1-2)
-
 Unit Converter - Temperature, weight, distance conversions with functions
 Tip Calculator - Input validation, arithmetic, formatting output
 Age Calculator - Date handling, arithmetic operations, conditionals
 BMI Calculator - Input, calculations, conditionals for health categories
 Simple Interest Calculator - Math operations, functions, formatted output
 Grade Point Average Calculator - Lists, loops, arithmetic operations
-Currency Converter (with fixed rates) - Dictionaries, functions, user input
-Password Strength Checker - String methods, conditionals, validation logic
-Simple Bill Splitter - Basic math, input handling, output formatting
-Word/Character Counter for Text - String operations, file reading
-Simple Countdown Timer - Loops, time module, basic formatting
-Basic Payroll Calculator - Functions, conditionals, arithmetic
+Currency Converter (with fixed rates) – Dictionaries, arithmetic, user input
+Password Strength Checker – String methods, loops, conditionals, validation logic
+Simple Bill Splitter – Basic math, input handling, output formatting
+Word/Character Counter for Text – String operations, file reading
+Simple Countdown Timer – Loops, time module, basic formatting
+Basic Payroll Calculator – Functions, conditionals, arithmetic
+Basic Calculator (Menu-Driven) – Loops, functions, conditional branching
+Temperature Logger – File handling, loops, data persistence
+Simple To-Do List (CLI) – Lists, loops, menu interface
+Random Password Generator – Random module, string concatenation, functions
+Even-Odd Number Sorter – Lists, loops, conditionals, sorting logic
+Multiplication Table Generator – Loops, arithmetic, formatted output
+Number Guessing Game – Random module, loops, conditionals, user interaction
+Palindrome Checker – String slicing, loops, Boolean logic
+Factorial & Fibonacci Calculator – Loops, recursion, arithmetic
+File Line Counter – File reading, loops, counters
+Prime Number Identifier – Loops, conditionals, arithmetic checks
+Simple Quiz App – Lists, loops, scoring system, conditionals
+Basic Contact Book (no file save) – Lists of tuples/dicts, search, conditionals
+Simple Shopping Cart – Lists, dictionaries, arithmetic, basic data grouping
+
+###New-Item -Name "gpa_calculator.py" -ItemType File###
+
 
 Medium Projects (Week 3-4)
 
-Personal Budget Tracker - Lists/dictionaries, file operations, calculations
-Student Grade Management - Dictionaries, lists, statistics, data organization
-Simple Inventory Tracker - Dictionaries, file persistence, stock management
-Expense Category Analyzer - Dictionaries, loops, basic data analysis
-To-Do List with Priority - Lists, sorting, file operations, date handling
-Simple Time Tracker - Time calculations, data storage, reporting
-Basic Recipe Manager - Dictionaries, lists, search functionality, file handling
-Contact Directory - Dictionaries, file operations, search/filter functions
-Simple Habit Tracker - Date handling, data persistence, progress calculation
-Basic Weather Data Logger - File operations, data analysis, simple statistics
-Library Book Tracker - Data organization, search functionality, due date management
-Simple URL Shortener (local) - String operations, dictionaries, file storage
-Basic Markdown to HTML Converter - String processing, file operations, text manipulation
-
+Personal Budget Tracker – Lists/dictionaries, file operations, calculations
+Student Grade Management – Dictionaries, lists, statistics, data organization
+Simple Inventory Tracker – Dictionaries, file persistence, stock management
+Expense Category Analyzer – Dictionaries, loops, basic data analysis
+To-Do List with Priority – Lists, sorting, file operations, date handling
+Simple Time Tracker – Time calculations, data storage, reporting
+Basic Recipe Manager – Dictionaries, lists, search functionality, file handling
+Contact Directory – Dictionaries, file operations, search/filter functions
+Simple Habit Tracker – Date handling, data persistence, progress calculation
+Basic Weather Data Logger – File operations, data analysis, simple statistics
+Library Book Tracker – Data organization, search functionality, due date management
+Simple URL Shortener (local) – String operations, dictionaries, file storage
+Basic Markdown to HTML Converter – String processing, file operations, text manipulation
+Expense Splitter with History Save – Lists, dictionaries, file persistence, calculations
+Simple Alarm Clock App – Time module, scheduling, user input
+Quiz Game with Scoreboard – Lists, dictionaries, file handling, conditionals
+Contact Directory (with Update/Delete) – CRUD operations, file persistence, data validation
+Movie Rating Tracker – Dictionaries, loops, basic statistics, file storage
+Task Reminder App – Date/time handling, file storage, scheduling logic
+Daily Journal Logger – File append mode, date/time stamps, string formatting
+Sales Report Generator – CSV file parsing, calculations, formatted report output
+Simple Banking System (CLI) – Dictionaries, conditionals, persistence (file save/load)
+Expense Analyzer (Pie Chart) – Dictionaries, matplotlib (optional), file read/write
+Password Vault (Local) – File encryption (simple XOR/base64), input handling, loops
+CSV Data Summarizer – CSV module, file handling, aggregation calculations
+Simple File Backup Tool – OS module, file copy, directory creation, error handling
 
 Slightly Advanced Projects (Week 5-8)
 Data Analysis & Processing
