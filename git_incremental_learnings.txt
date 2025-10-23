@@ -1,0 +1,59 @@
+🧩 Git Incremental Learnings
+Stage 1 — Core Commands (Version Checkpoints)
+
+Goal: Track and save progress after each project.
+
+git status        # Show modified, deleted, untracked files
+git add .         # Stage all changes
+git commit -m "message"   # Save version with description
+git push          # Upload commits to GitHub
+git log --oneline # View concise commit history
+
+
+🟢 Use these for every new project or improvement.
+
+Stage 2 — Safe Experimentation (Branches)
+
+Goal: Try improvements without breaking main.
+
+git branch feature-<name>   # Create a new branch
+git checkout feature-<name> # Switch to that branch
+git add . && git commit -m "Describe change"
+git checkout main           # Return to main branch
+git merge feature-<name>    # Merge new feature to main
+
+
+🟢 Use this when testing or optimizing your code.
+
+Stage 3 — Undo & Compare
+
+Goal: Fix mistakes and track differences confidently.
+
+git diff             # Show changes before committing
+git restore <file>   # Undo unstaged changes
+git reset HEAD~1     # Undo last commit (careful!)
+git checkout <commit_id>  # View a past version temporarily
+
+
+🟢 Use only after understanding what each command does.
+
+Stage 4 — Milestones & Tags
+
+Goal: Mark stable versions or project completions.
+
+git tag v1.0 -m "First stable release"
+git push origin v1.0
+
+
+🟢 Use this after completing a project milestone.
+
+Stage 5 — Collaboration & Maintenance
+
+Goal: Work safely with others or on multiple devices.
+
+git clone <repo_url>   # Copy a repository
+git pull               # Update your local branch
+git fetch              # Check for remote updates
+
+
+🟢 Learn when you begin collaborating or syncing across machines.
