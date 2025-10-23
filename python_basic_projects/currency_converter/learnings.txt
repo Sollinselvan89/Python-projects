@@ -1,0 +1,46 @@
+Project Summary: Currency Converter
+Objective:
+
+Build a Currency Converter that takes user input for base currency, target currency, and amount, then calculates the converted amount using fixed exchange rates.
+
+Key Learnings:
+
+Function and Input Handling:
+
+Functions: How to define functions with parameters (e.g., calculate_currency_conversion()) and return results.
+
+User Input: Collected and validated multiple types of input (e.g., currency names and amounts) using while loops for repeated input prompts until valid data is provided.
+
+Return Statement & Tuple:
+
+Multiple Return Values: Returning multiple values as a tuple (e.g., return amount, base_rate, target_rate, base, target) allows you to send multiple data types at once.
+
+Single Return Value: Returning a single value just gives that value back, while multiple values automatically create a tuple.
+
+Error Handling:
+
+try/except for handling invalid numerical input (e.g., catching ValueError when user inputs an invalid number for amount).
+
+Validating currency codes against a predefined list using if statements ensures that the user inputs valid data.
+
+PEP 8 Style Compliance:
+
+Function Spacing: Added 2 blank lines between top-level function definitions and 1 blank line between logical blocks, including inside loops and before/after docstrings for readability.
+
+Variable Naming: Followed snake_case for function names, variables, and parameters to align with PEP 8 conventions.
+
+Docstrings: Provided clear and concise docstrings for each function, describing what they do, their parameters, and what they return. This is in line with PEP 257 guidelines.
+
+Functions like currency_rates() and calculate_currency_conversion() now contain descriptions of their purpose and return values.
+
+Code Readability:
+
+Meaningful Function Names: Used descriptive names like user_input() and calculate_currency_conversion() for better clarity.
+
+Inline Comments: Added inline comments to highlight sections of the code, especially for the calculation logic.
+
+Next Steps:
+
+Continue with code optimizations and cleaner input handling, potentially reducing repetition using a more dynamic approach (e.g., fewer while loops, more flexible input validation).
+
+Implement unit tests for functions like calculate_currency_conversion() to ensure accuracy in the conversion calculations.
