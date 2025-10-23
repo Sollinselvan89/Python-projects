@@ -1,9 +1,35 @@
+"""
+Currency Converter
+------------------
+This program calculates value of target currency provided 
+if an user provides the base currency and the total amount
+"""
 
-def calculate_currency_conversion(amount,base_rate, target_rate ): # make this order does not matter
+def calculate_currency_conversion(*,amount,base_rate, target_rate ): 
+    """
+    Calculate the the target currency amount using the base currency rate, 
+    base currency amount and target currency.
+
+    Parameters: 
+        amount(float), base_rate(float), target_rate(float)
+
+    Returns:
+        float: calculated target amount
+
+
+    """
     converted_amount = amount *(target_rate/base_rate)
     return converted_amount
 
 def currency_rates():
+    """ 
+    Maintains a dictionary of major currencies and their value
+
+    Returns: 
+        A dicionary with currency name as keys and currency rate as values 
+        with USD as the base currency
+    
+    """
     currency_rates = {
     "USD": 1.00,     # US Dollar
     "EUR": 0.93,     # Euro
@@ -19,6 +45,14 @@ def currency_rates():
     return currency_rates
 
 def user_input():
+    """
+    Collects validated user inputs: base currency, target currency 
+    and base amount
+
+    Returns:
+        tuple: amount, base_rate,target_rate,base,target
+
+    """
     currency_rates_dic = currency_rates()
     currency_list = list(currency_rates_dic.keys())
     print(f"Available currencies for conversion: {currency_list}")
@@ -61,6 +95,9 @@ def user_input():
         return amount, base_rate,target_rate,base,target
 
 def main():
+    """
+    Main function to run the currency converter app
+    """
     print("Welcome to the curreny converter app")
     amount, base_rate,target_rate,base,target = user_input()
     converted_amount = calculate_currency_conversion(amount, base_rate,target_rate)
