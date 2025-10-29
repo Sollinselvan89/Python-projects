@@ -1,0 +1,47 @@
+## 🧠 Learning Summary — Word/Character Counter Project
+
+### ✅ **Concept Reinforcements (based on your questions)**
+
+* Learned how `open()` works with `"r"` mode and what `encoding="utf-8"` does.
+* Understood the purpose of `with open(...) as file:` — automatic file closing after reading.
+* Understood how `split()`, `splitlines()`, and `len()` function differently:
+
+  * `len(text)` → counts every character (including spaces, punctuation, and newlines).
+  * `split()` → splits words by spaces.
+  * `splitlines()` → splits text by newline (`\n`) characters to count lines.
+* Clarified that `splitlines()` counts **lines**, not **sentences or paragraphs**.
+* Learned to count sentences using `re.split(r'[.!?]+', text)` from the `re` (regex) module.
+* Realized that commas and punctuation remain attached when using `split()` — learned to use `re.findall(r'\b\w+\b', text)` for cleaner word counting.
+* Practiced how to debug in **VS Code**, view variable states, and handle runtime errors.
+* Understood `pytest` basics: how to call functions, use `assert`, and interpret pass/fail results.
+
+
+---
+
+### ⚠️ **Mistakes & Fixes**
+
+| Mistake                                                           | Fix                                                   |
+| ----------------------------------------------------------------- | ----------------------------------------------------- |
+| Added extra quotes around file path → `OSError`                   | Typed path without quotes or used `.strip('"')`       |
+| File name misspelled (`charcter_counter`) → `ModuleNotFoundError` | Renamed correctly to `character_counter.py`           |
+| Ran pytest inside REPL instead of terminal                        | Exited REPL and ran `pytest -v` in terminal           |
+| Confused sentences vs lines                                       | Learned `splitlines()` counts newlines, not sentences |
+
+---
+
+### 🔧 **New Git Learnings**
+
+* Practiced `git init`, `add`, `commit`, `push`, `branch`, `merge`, `delete`.
+* Learned `git diff` to compare code and exit with `q`.
+* Understood branch naming convention (`feature/pytest-and-docs`).
+* Learned commit message standards (`feat:`, `fix:`, `docs:` format).
+
+---
+
+### 🎯 **Next Focus Area**
+
+* Practice **undo and compare commands**: `git restore`, `git reset`, `git checkout <commit_id>`.
+* Use **Git tags** to mark project milestones (`git tag v1.0 -m "Stable Release"`).
+* Add a **.gitignore** file to exclude cache folders (`__pycache__/`).
+* Next mini-project: **File Line Counter** (builds directly on this one).
+
