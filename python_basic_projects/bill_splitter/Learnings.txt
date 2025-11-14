@@ -1,0 +1,125 @@
+Fantastic 👏 — marking your **Bill Splitter Project (Method 2: Equal Split + Adjustment)** as **✅ Complete** is a great milestone.
+Here’s your **personalized lessons learned summary**, fully based on *your code, your debugging process, and this entire chat thread* — not generic notes.
+
+---
+
+## 🧭 **Bill Splitter — Lessons Learned Summary**
+
+### ✅ **1️⃣ Concept Understanding**
+
+* Learned **two real-world split methods**:
+
+  * *Equal split + adjustment* (used here)
+  * *Proportional split by order size*
+* Understood that each person’s balance = `paid − equal_share`.
+* Learned how `len(contributions)` counts **dictionary keys**, not values.
+* Practiced using `sum(contributions.values())` to total all numeric entries.
+
+---
+
+### ✅ **2️⃣ Python Coding and Validation**
+
+* Strengthened **input validation**:
+
+  * `if not name.strip()` → detect empty names.
+  * Length range checks (`2 ≤ len(name) ≤ 30`).
+  * `.replace(" ", "").isalpha()` → allow only letters + spaces.
+* Added **space normalization**:
+  `" ".join(name.split())` → keeps one clean space between words.
+* Correctly positioned `break` vs `return` inside loops.
+* Avoided storing lists in a dictionary when only floats were needed
+  → `persons_contributions[person] = amount` ✅
+* Handled **whole-number decimal bug** with:
+
+  ```python
+  if '.' in amount_str and len(amount_str.split('.')[-1]) > 2:
+      ...
+  ```
+
+---
+
+### ✅ **3️⃣ Debugging Skills**
+
+* Learned how to debug **TypeErrors** by checking data types (`list vs float`).
+* Practiced using **print-based debugging** (`print("DEBUG:", variable)`).
+* Learned to place **breakpoints** in VS Code to inspect variable states.
+* Understood the difference between *function return values* and *side effects*.
+
+---
+
+### ✅ **4️⃣ PEP 8 & Documentation**
+
+* Practiced proper **PEP 8 spacing, indentation, and naming**.
+* Learned to write meaningful, concise **docstrings**:
+
+  * Use **triple quotes**, imperative mood, present tense.
+  * Describe **what** the function does, not how.
+  * Example:
+
+    ```python
+    """Calculates how much each person owes or should receive
+    based on equal share logic."""
+    ```
+* Corrected small wording issues (“Wecome”→“Welcome”, “Settlments”→“Settlements”).
+
+---
+
+### ✅ **5️⃣ Testing and pytest Mindset**
+
+* Learned **what to test**:
+  Test logic functions (`calculate_settlement`) ✅
+  Avoid direct input/output functions (`get_user_input`) ❌
+* Understood `assert` → checks truth; fails test if false.
+* Learned `capsys.readouterr()` → captures printed output for testing.
+* Internalized rule of thumb:
+
+  > “Test what thinks, not what talks.” 💭
+
+---
+
+### ✅ **6️⃣ Error Handling and Edge Cases**
+
+* Handled negative and invalid numeric inputs.
+* Considered scenarios:
+
+  * One payer only (should be settled).
+  * Equal payments.
+  * Zero contributor → owes full share.
+  * Floating-point rounding issues.
+
+---
+
+### ✅ **7️⃣ Mindset Growth**
+
+* Shifted from *just getting output* → *understanding logic + data flow*.
+* Practiced reasoning before coding (“Why loop not reached?”, “Why dict not updating?”).
+* Learned structured debugging > trial and error.
+* Realized testing might feel slow initially but saves huge time later.
+
+---
+
+## 🎯 **Next Focus Area**
+
+1. **Modularization:** Break I/O from logic (pure functions easier to test).
+2. **pytest practice:** Automate tests for `calculate_settlement`.
+3. **Optional next project:** Add file export (save results to `.txt` or `.csv`).
+4. **Keep applying PEP 8 + docstrings habit** from first line of every new script.
+
+---
+
+## 🧩 **Code Quality Review**
+
+| Category          | Rating        | Notes                            |
+| ----------------- | ------------- | -------------------------------- |
+| PEP 8 Style       | ⭐⭐⭐⭐☆ (4.5/5) | Clean indentation & naming       |
+| Input Validation  | ⭐⭐⭐⭐⭐ (5/5)   | Robust and clear                 |
+| Logic Accuracy    | ⭐⭐⭐⭐☆ (4.5/5) | Perfect after fixing dict values |
+| Documentation     | ⭐⭐⭐⭐☆ (4/5)   | Improved docstrings              |
+| Readability       | ⭐⭐⭐⭐⭐ (5/5)   | Easy to follow                   |
+| Testing Readiness | ⭐⭐⭐⭐☆ (4/5)   | pytest-friendly logic            |
+
+---
+
+✅ **Verdict:**
+Your Bill Splitter project is complete and *ready for portfolio use* — it shows solid understanding of loops, validation, debugging, and clean code.
+

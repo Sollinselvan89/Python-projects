@@ -1,107 +1,1032 @@
-Expanded Mini-Projects Roadmap (Real-World Focus)
-Easy Projects (Week 1-2)
-Unit Converter - Temperature, weight, distance conversions with functions
-Tip Calculator - Input validation, arithmetic, formatting output
-Age Calculator - Date handling, arithmetic operations, conditionals
-BMI Calculator - Input, calculations, conditionals for health categories
-Simple Interest Calculator - Math operations, functions, formatted output
-Grade Point Average Calculator - Lists, loops, arithmetic operations
-Currency Converter (with fixed rates) – Dictionaries, arithmetic, user input
-Password Strength Checker – String methods, loops, conditionals, validation logic
-Simple Bill Splitter – Basic math, input handling, output formatting
-Word/Character Counter for Text – String operations, file reading
-Simple Countdown Timer – Loops, time module, basic formatting
-Basic Payroll Calculator – Functions, conditionals, arithmetic
-Basic Calculator (Menu-Driven) – Loops, functions, conditional branching
-Temperature Logger – File handling, loops, data persistence
-Simple To-Do List (CLI) – Lists, loops, menu interface
-Random Password Generator – Random module, string concatenation, functions
-Even-Odd Number Sorter – Lists, loops, conditionals, sorting logic
-Multiplication Table Generator – Loops, arithmetic, formatted output
-Number Guessing Game – Random module, loops, conditionals, user interaction
-Palindrome Checker – String slicing, loops, Boolean logic
-Factorial & Fibonacci Calculator – Loops, recursion, arithmetic
-File Line Counter – File reading, loops, counters
-Prime Number Identifier – Loops, conditionals, arithmetic checks
-Simple Quiz App – Lists, loops, scoring system, conditionals
-Basic Contact Book (no file save) – Lists of tuples/dicts, search, conditionals
-Simple Shopping Cart – Lists, dictionaries, arithmetic, basic data grouping
+# PYTHON → ML ENGINEER: COMPLETE PROJECT LIST WITH RESOURCES
+# Total: 66 projects (63 original + 3 advanced Python)
+# Current Status: Completed up to Project 11 (Simple To-Do List)
+# Books You Have: Think Python, Python Crash Course
 
-###New-Item -Name "gpa_calculator.py" -ItemType File###
+═══════════════════════════════════════════════════════════════
+📚 ESSENTIAL BOOKS RECOMMENDATIONS
+═══════════════════════════════════════════════════════════════
+
+BOOKS YOU ALREADY HAVE:
+✓ Think Python by Allen Downey - Great for fundamentals
+✓ Python Crash Course by Eric Matthes - Excellent for project-based learning
+
+ADDITIONAL RECOMMENDED BOOKS (PRIORITY ORDER):
+
+**For OOP & Advanced Python (Month 3-4):**
+1. "Fluent Python" by Luciano Ramalho ⭐⭐⭐⭐⭐
+   - Covers: Decorators, generators, context managers, metaclasses
+   - When: After Month 3.5 (OOP phase)
+   - Why: THE book for intermediate→advanced Python
+
+2. "Python Cookbook" by David Beazley & Brian K. Jones
+   - Covers: Practical recipes, advanced patterns
+   - When: Month 4+
+   - Why: Real-world problem-solving patterns
+
+**For Data Analysis (Month 4-12):**
+3. "Python for Data Analysis" by Wes McKinney ⭐⭐⭐⭐⭐
+   - Author: Creator of pandas
+   - Covers: pandas, NumPy, data manipulation
+   - When: Month 4-6
+   - Why: Definitive pandas guide
+
+4. "Storytelling with Data" by Cole Nussbaumer Knaflic
+   - Covers: Data visualization principles
+   - When: Month 6-8
+   - Why: Learn how to present insights effectively
+
+**For Data Engineering (Month 12-24):**
+5. "Fundamentals of Data Engineering" by Joe Reis & Matt Housley ⭐⭐⭐⭐⭐
+   - Covers: Modern DE principles, architecture
+   - When: Month 12-15
+   - Why: Industry standard DE book
+
+6. "Designing Data-Intensive Applications" by Martin Kleppmann
+   - Covers: Distributed systems, databases, scalability
+   - When: Month 18+
+   - Why: Deep understanding of data systems (advanced)
+
+**For Machine Learning (Month 24-36):**
+7. "Hands-On Machine Learning" by Aurélien Géron ⭐⭐⭐⭐⭐
+   - Covers: scikit-learn, TensorFlow, practical ML
+   - When: Month 24-28
+   - Why: Best practical ML book
+
+8. "Machine Learning Yearning" by Andrew Ng (FREE PDF)
+   - Link: https://info.deeplearning.ai/machine-learning-yearning-book
+   - Covers: ML project structuring, strategy
+   - When: Month 24+
+   - Why: How to approach ML problems
+
+**Optional But Valuable:**
+9. "Automate the Boring Stuff with Python" by Al Sweigart (FREE online)
+   - Link: https://automatetheboringstuff.com/
+   - When: Month 0-3 (alongside your current books)
+   - Why: Practical automation examples
+
+═══════════════════════════════════════════════════════════════
+PHASE 0: PYTHON FUNDAMENTALS (MONTHS 0-3)
+═══════════════════════════════════════════════════════════════
+
+## MONTH 0-1: CORE PYTHON SYNTAX
+
+**Resources for Month 0-1:**
+- ✓ Your Books: Think Python (Chapters 1-7), Python Crash Course (Part 1)
+- Python Official Tutorial: https://docs.python.org/3/tutorial/
+- W3Schools Python: https://www.w3schools.com/python/
+- ChatGPT/Claude: For debugging and explanations
+
+[✓] 1. Unit Converter
+Topics: Functions, parameters, return values, arithmetic operators, input/output, string formatting, conditionals (if/elif/else)
+Time: 2-3 hours
+
+[✓] 2. Tip Calculator  
+Topics: Input validation, float arithmetic, formatting output (f-strings), calculations with percentages
+Time: 2 hours
+
+[✓] 3. Age Calculator
+Topics: Date handling, datetime module, arithmetic operations, conditionals, input parsing
+Time: 2-3 hours
+
+[✓] 4. BMI Calculator
+Topics: Input validation, calculations, conditionals for categories (underweight/normal/overweight), formatted output
+Time: 2 hours
+
+[✓] 5. Simple Interest Calculator
+Topics: Math operations, functions with multiple parameters, return values, formatted output (decimal places)
+Time: 2 hours
+
+[✓] 6. Grade Point Average Calculator
+Topics: Lists, loops (for loop), arithmetic operations, average calculation, input handling
+Time: 3 hours
+
+[✓] 7. Currency Converter (fixed rates)
+Topics: Dictionaries (currency:rate pairs), arithmetic, user input, key lookup, error handling basics
+Time: 3 hours
+
+[✓] 8. Password Strength Checker
+Topics: String methods (isalpha, isdigit, isupper, islower), loops, conditionals, validation logic, boolean logic
+Time: 3 hours
+
+[✓] 9. Character Counter
+Topics: String operations, dictionaries (character:count), loops, file reading, text processing
+Time: 3-4 hours
+
+[✓] 10. Simple Bill Splitter
+Topics: Basic math, input handling, division, rounding (round function), output formatting, functions
+Time: 2-3 hours
+
+[✓] 11. Simple To-Do List (CLI) ← YOU ARE HERE
+Topics: Lists, loops (while loop for menu), menu interface, CRUD operations (add, view, delete), list methods (append, remove, pop)
+Time: 3-4 hours
 
 
-Medium Projects (Week 3-4)
+## MONTH 1-2: DATA STRUCTURES & FILE HANDLING
 
-Personal Budget Tracker – Lists/dictionaries, file operations, calculations
-Student Grade Management – Dictionaries, lists, statistics, data organization
-Simple Inventory Tracker – Dictionaries, file persistence, stock management
-Expense Category Analyzer – Dictionaries, loops, basic data analysis
-To-Do List with Priority – Lists, sorting, file operations, date handling
-Simple Time Tracker – Time calculations, data storage, reporting
-Basic Recipe Manager – Dictionaries, lists, search functionality, file handling
-Contact Directory – Dictionaries, file operations, search/filter functions
-Simple Habit Tracker – Date handling, data persistence, progress calculation
-Basic Weather Data Logger – File operations, data analysis, simple statistics
-Library Book Tracker – Data organization, search functionality, due date management
-Simple URL Shortener (local) – String operations, dictionaries, file storage
-Basic Markdown to HTML Converter – String processing, file operations, text manipulation
-Expense Splitter with History Save – Lists, dictionaries, file persistence, calculations
-Simple Alarm Clock App – Time module, scheduling, user input
-Quiz Game with Scoreboard – Lists, dictionaries, file handling, conditionals
-Contact Directory (with Update/Delete) – CRUD operations, file persistence, data validation
-Movie Rating Tracker – Dictionaries, loops, basic statistics, file storage
-Task Reminder App – Date/time handling, file storage, scheduling logic
-Daily Journal Logger – File append mode, date/time stamps, string formatting
-Sales Report Generator – CSV file parsing, calculations, formatted report output
-Simple Banking System (CLI) – Dictionaries, conditionals, persistence (file save/load)
-Expense Analyzer (Pie Chart) – Dictionaries, matplotlib (optional), file read/write
-Password Vault (Local) – File encryption (simple XOR/base64), input handling, loops
-CSV Data Summarizer – CSV module, file handling, aggregation calculations
-Simple File Backup Tool – OS module, file copy, directory creation, error handling
+**Resources for Month 1-2:**
+- ✓ Your Books: Think Python (Chapters 8-14), Python Crash Course (Chapters 6-10)
+- Real Python File I/O: https://realpython.com/read-write-files-python/
+- Real Python Dictionaries: https://realpython.com/python-dicts/
 
-Slightly Advanced Projects (Week 5-8)
-Data Analysis & Processing
+[ ] 12. Random Password Generator
+Topics: Random module (random.choice, random.randint), string module (string.ascii_letters, digits, punctuation), string concatenation, functions, list comprehensions (optional)
+Time: 2 hours
 
-Personal Finance Dashboard - Multiple data sources, charts with matplotlib, trend analysis
-CSV Data Analyzer - Read/process CSV files, generate reports, statistical analysis
-Log File Analyzer - Parse server/application logs, extract patterns, error reporting
-Sales Data Reporter - Process sales data, generate monthly/quarterly reports
-Survey Response Analyzer - Process survey data, calculate percentages, generate insights
+[ ] 13. Even-Odd Number Sorter
+Topics: List comprehensions, filtering with conditionals, modulo operator (%), loops, conditionals, list operations
+Time: 2 hours
 
-File & Data Management
+[ ] 14. File Line Counter
+Topics: File reading (open, read, readlines), with statement (context manager basics), loops, counting, error handling (try/except for FileNotFoundError)
+Time: 2 hours
 
-File Organizer Tool - Automatically sort files by type/date, duplicate detection
-Backup File Manager - Create backups, compare directories, restore functionality
-Document Converter - Convert between text formats (CSV to JSON, etc.)
-Photo Metadata Extractor - Extract EXIF data, organize photos by date/location
-Duplicate File Finder - Scan directories, identify duplicates, cleanup options
+[ ] 15. Simple CSV Data Reader
+Topics: CSV module (csv.reader, csv.DictReader), file handling, loops, dictionaries, displaying data, filtering basics
+Time: 3 hours
+Dataset: Create your own CSV (students.csv with name, age, grade columns) or generate with ChatGPT
 
-Web & API Integration
-
-Weather Data Collector - Fetch weather APIs, store historical data, trend analysis
-Stock Price Monitor - Track stock prices, alert system, basic portfolio tracking
-News Headline Aggregator - Collect news from RSS feeds, categorize, save
-Currency Rate Tracker - Fetch live exchange rates, historical tracking
-Simple Web Scraper - Extract data from websites, clean and store information
-
-Automation & Utilities
-
-Email Automation Tool - Send scheduled emails, template management
-System Monitor - Track CPU/memory usage, generate alerts, log performance
-Task Scheduler - Schedule and run automated tasks, logging, error handling
-Configuration File Manager - Read/write config files, validate settings
-Batch Image Processor - Resize, rename, convert image formats in bulk
-
-Business Applications
-
-Invoice Generator - Create professional invoices, PDF export, client management
-Time Tracking Tool - Project time tracking, reporting, productivity analysis
-Simple CRM System - Customer data management, interaction tracking, reporting
-Inventory Management System - Stock tracking, low-stock alerts, supplier management
-Employee Attendance Tracker - Track work hours, calculate overtime, generate reports
+[ ] 16. Basic Statistics Calculator
+Topics: Lists, math operations (sum, len), sorting (sorted), mean/median/mode calculations, statistics module (optional), functions for each metric
+Time: 3-4 hours
 
 
-To Do
-blog posts
-pytest
-clean codes problem solving with screenshots and documentation
+## MONTH 2-3: INTERMEDIATE PYTHON
+
+**Resources for Month 2-3:**
+- ✓ Your Books: Think Python (Chapters 10-12, 14), Python Crash Course (Chapters 9-10)
+- Automate the Boring Stuff: https://automatetheboringstuff.com/ (Chapters 8-9)
+- Real Python JSON: https://realpython.com/python-json/
+
+[ ] 17. Simple Quiz App
+Topics: Dictionaries for questions (nested structures), loops, scoring system, conditionals, string methods (lower for case-insensitive comparison), list of dictionaries
+Time: 3 hours
+Dataset: Create your own quiz questions (Python basics, general knowledge, etc.)
+
+[ ] 18. Simple Data Filter Tool
+Topics: File reading, CSV module, filtering with conditions (if statements), writing files, list comprehensions for filtering, lambda functions (introduction)
+Time: 4 hours
+
+[ ] 19. Basic Contact Book
+Topics: Lists of dictionaries/tuples, search functionality, CRUD operations, JSON module (json.dump, json.load), file persistence, error handling
+Time: 4-5 hours
+
+[ ] 20. Simple Shopping Cart
+Topics: Lists, dictionaries, arithmetic (subtotal, total), nested data structures, grouping data, calculations with loops
+Time: 4 hours
+
+**Phase 0 Total: 20 projects**
+**Estimated Time: 50-60 hours over 3 months**
+
+
+═══════════════════════════════════════════════════════════════
+PHASE OOP: OBJECT-ORIENTED PROGRAMMING (MONTH 3.5 - 2 WEEKS)
+═══════════════════════════════════════════════════════════════
+
+**🚨 CRITICAL PHASE - DO NOT SKIP! OOP is mandatory for DE/MLE roles**
+
+**Resources for Month 3.5 (OOP):**
+- 🎥 Corey Schafer Python OOP Playlist (MUST WATCH): https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+  - 6 videos, 1.5 hours total - BEST OOP tutorials on YouTube
+- 📖 Real Python OOP Guide: https://realpython.com/python3-object-oriented-programming/
+- 📖 Official Python Classes Tutorial: https://docs.python.org/3/tutorial/classes.html
+- 📖 Book (After completing projects): "Fluent Python" Chapters 1-5 for deeper understanding
+
+## WEEK 1: CLASSES, OBJECTS, METHODS
+
+[ ] 21. Bank Account System
+Topics: Classes, __init__ method, self keyword, instance variables, instance methods, basic encapsulation, lists for transaction history, string formatting in methods
+Time: 4-5 hours
+Watch First: Corey Schafer OOP Tutorial 1 & 2 (25 min total)
+
+[ ] 22. Student Management System
+Topics: Class variables vs instance variables, __str__ method, __repr__ method, multiple classes interacting, dictionaries for grades, methods with calculations, list of objects
+Time: 5-6 hours
+Watch First: Corey Schafer OOP Tutorial 2 (class variables)
+Read: Real Python __str__ vs __repr__ article
+
+[ ] 23. E-commerce Product Catalog
+Topics: @property decorator, getters and setters, private attributes (naming convention with _), encapsulation, validation in setters, raising exceptions (ValueError), tuples for cart items, list comprehensions
+Time: 6-7 hours
+Watch First: Corey Schafer OOP Tutorial 6 (Property Decorators)
+
+
+## WEEK 2: INHERITANCE, POLYMORPHISM, ADVANCED OOP
+
+[ ] 24. Shape Calculator
+Topics: Abstract Base Classes (ABC module), @abstractmethod decorator, inheritance (parent/child classes), super() function, polymorphism (method overriding), isinstance checks, math module for calculations
+Time: 6-7 hours
+Watch First: Corey Schafer OOP Tutorial 4 (Inheritance)
+Read: Real Python Inheritance article
+
+[ ] 25. Employee Management System
+Topics: Magic methods (__add__, __lt__, __len__, __eq__, __hash__), inheritance (multi-level), method overriding, @property decorator, sorting with custom comparison, lambda functions with sorted()
+Time: 6-7 hours
+Watch First: Corey Schafer OOP Tutorial 5 (Magic Methods)
+Read: Real Python Python Magic Methods Guide
+
+[ ] 26. Library Management System (Comprehensive OOP Project)
+Topics: Composition (has-a relationship), complex class relationships (Book, Member, Loan, Library), datetime module, date arithmetic (timedelta), multiple interacting classes, business logic, validation, list operations, dictionary lookups, error handling
+Time: 8-10 hours
+Watch First: ArjanCodes Composition vs Inheritance video
+Read: Real Python Composition article
+Note: This is your FINAL OOP project - most comprehensive, combines all concepts
+
+**Phase OOP Total: 6 projects**
+**Estimated Time: 36-48 hours over 2 weeks**
+
+**OOP Outcome:**
+✅ Can create classes and objects
+✅ Understand inheritance, polymorphism, composition
+✅ Know all major magic methods
+✅ Can design complex systems with multiple classes
+✅ Ready for professional-level Python in pandas, DE, ML
+
+
+═══════════════════════════════════════════════════════════════
+🔥 ADVANCED PYTHON (OPTIONAL BUT RECOMMENDED - AFTER MONTH 4)
+═══════════════════════════════════════════════════════════════
+
+**Why These Matter:**
+- Decorators: Used in Flask/FastAPI (web frameworks for DE/MLE)
+- Generators: Memory-efficient data processing (important for big datasets)
+- Context Managers: Proper resource management (files, databases, connections)
+
+**When to Learn:** After Month 4-6 (once comfortable with pandas + OOP)
+**Book Reference:** "Fluent Python" Chapters 7-9 (decorators), 14 (iterators/generators)
+
+**Resources:**
+- 🎥 Corey Schafer Decorators: https://www.youtube.com/watch?v=FsAPt_9Bf3U (30 min)
+- 🎥 Corey Schafer Generators: https://www.youtube.com/watch?v=bD05uGo_sVI (20 min)  
+- 🎥 Corey Schafer Context Managers: https://www.youtube.com/watch?v=-aKFBoZpiqA (15 min)
+- 📖 Real Python Decorators: https://realpython.com/primer-on-python-decorators/
+- 📖 Real Python Generators: https://realpython.com/introduction-to-python-generators/
+
+[ ] 27A. Function Timer Decorator (DECORATOR PROJECT)
+Topics: Function decorators, @wraps from functools, closures, higher-order functions, timing functions (time.time), wrapper functions, decorator arguments
+Time: 4-5 hours
+Use Case: Time how long your pandas operations take
+Example: @timer decorator that prints execution time of any function
+Book: "Fluent Python" Chapter 7
+
+[ ] 27B. Log File Analyzer with Generators (GENERATOR PROJECT)
+Topics: Generator functions (yield), generator expressions, memory efficiency, itertools module, lazy evaluation, processing large files line-by-line
+Time: 5-6 hours
+Use Case: Process multi-GB log files without loading everything into memory
+Dataset: Generate large log file (10MB+) or download Apache/Nginx logs
+Book: "Fluent Python" Chapter 14
+
+[ ] 27C. Database Connection Manager (CONTEXT MANAGER PROJECT)
+Topics: Context managers (__enter__, __exit__), with statement internals, resource management, exception handling in context managers, creating custom context managers
+Time: 4-5 hours
+Use Case: Automatically handle database connections (open/close safely)
+Example: with DatabaseConnection() as db: ... automatically closes connection
+Book: "Fluent Python" Chapter 15
+
+**Advanced Python Total: 3 projects (optional)**
+**Estimated Time: 13-16 hours**
+**When: Insert between Month 4-8 based on your interest and time**
+
+
+═══════════════════════════════════════════════════════════════
+PHASE 1: DATA ANALYST PATH (MONTHS 4-12)
+═══════════════════════════════════════════════════════════════
+
+## MONTH 4: INTRODUCTION TO PANDAS
+
+**Resources:**
+- 🎥 Keith Galli Complete Pandas Tutorial (1 hour): https://www.youtube.com/watch?v=vmEHCJofslg ⭐⭐⭐⭐⭐
+- 📖 Book: "Python for Data Analysis" by Wes McKinney (Chapters 4-5)
+- 📖 Official pandas Tutorials: https://pandas.pydata.org/docs/getting_started/intro_tutorials/
+- 📖 pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+- Practice: Kaggle Learn pandas course: https://www.kaggle.com/learn/pandas (4 hours, FREE)
+
+[ ] 28. Personal Budget Tracker (pandas + OOP)
+Topics: pandas DataFrames, Series, read_csv, to_csv, DataFrame operations (head, tail, describe), filtering with boolean indexing, groupby basics, datetime handling (pd.to_datetime), basic matplotlib visualization (bar/line plots), OOP for BudgetTracker class
+Time: 8-10 hours
+Dataset: Create your own budget CSV or generate with ChatGPT (100+ transactions)
+    
+[ ] 29. Student Grade Management (pandas + OOP)
+Topics: pandas aggregations (mean, median, std), groupby with multiple operations (.agg), filtering DataFrames, boolean indexing, statistical functions, DataFrame from dictionaries, OOP class for analyzer
+Time: 6-8 hours
+Dataset: Create CSV with 50 students, 5 subjects each (250 rows)
+    
+[ ] 30. Expense Category Analyzer
+Topics: pandas groupby, pivot tables, value_counts, sorting (sort_values), matplotlib pie charts, data summarization, CSV handling with pandas, dictionary comprehensions
+Time: 8 hours
+Kaggle Dataset: BankSim1 (Credit Card Transactions)
+- Link: https://www.kaggle.com/datasets/ealaxi/banksim1
+- Size: 594k transactions, 10 columns
+- Great for: Fraud detection patterns, spending analysis
+
+
+## MONTH 5: ADVANCED PANDAS + SQL INTRODUCTION
+
+**Pandas Resources:**
+- 🎥 Keith Galli - Solving Real World Tasks: https://www.youtube.com/watch?v=eMOA1pPVUc4
+- 📖 Book: "Python for Data Analysis" Chapters 7-10
+
+**SQL Resources (START LEARNING SQL HERE!):**
+- 🎥 FreeCodeCamp SQL for Beginners (4 hours): https://www.youtube.com/watch?v=HXV3zeQKqGY
+- 📖 Mode Analytics SQL Tutorial (Interactive, FREE): https://mode.com/sql-tutorial/ ⭐⭐⭐⭐⭐
+  - BEST free SQL tutorial - complete this first!
+- 📖 SQL Cheat Sheet: https://www.sqltutorial.org/sql-cheat-sheet/
+- Install: PostgreSQL (https://www.postgresql.org/) OR use SQLite (built into Python)
+
+**SQL Practice Platforms (Choose 1-2):**
+1. **SQLZoo** (Best for beginners): https://sqlzoo.net/ ⭐⭐⭐⭐⭐
+   - Free, interactive, step-by-step lessons
+   - Start here if SQL is new to you
+   
+2. **HackerRank SQL** (Structured practice): https://www.hackerrank.com/domains/sql ⭐⭐⭐⭐⭐
+   - Free, 100+ problems organized by difficulty
+   - Great for building skills progressively
+   - Has SQL Basic/Intermediate/Advanced certification tests
+   
+3. **LeetCode SQL** (Interview focus): https://leetcode.com/problemset/database/ ⭐⭐⭐⭐
+   - "Top SQL 50" study plan (curated for interviews)
+   - Free tier has ~50 problems, Premium ($35/month) has 150+
+   - Use this when preparing for interviews (Month 9-11)
+   
+4. **StrataScratch** (Real company questions): https://www.stratascratch.com/ ⭐⭐⭐⭐
+   - 1000+ real interview problems from FAANG companies
+   - Free tier available
+   - Best for: Understanding what companies actually ask
+
+**Recommended SQL Learning Path:**
+1. Complete Mode Analytics Tutorial (Week 1)
+2. Practice on SQLZoo (Week 2-3, complete all modules)
+3. Move to HackerRank (Week 4+, solve 30-50 problems)
+4. Save LeetCode for Month 9-11 (interview prep phase)
+
+[ ] 31. COVID-19 Data Explorer ⭐⭐⭐
+Topics: pandas time series (DatetimeIndex), rolling windows (.rolling), filtering by date ranges, multiple DataFrames, merge operations, advanced groupby, matplotlib line plots, seaborn styling, data cleaning (dropna, fillna)
+Time: 10-12 hours
+Kaggle Dataset: Our World in Data - COVID-19 Dataset
+- Link: https://github.com/owid/covid-19-data/tree/master/public/data
+- Alternative: https://www.kaggle.com/datasets/imdevskp/corona-virus-report
+- Size: 200k+ rows, 67 columns
+- Great for: Time series analysis, global comparisons, pandemic trends
+Portfolio Value: ⭐⭐⭐ (Shows real-world data handling)
+    
+[ ] 32. E-commerce Product Analyzer ⭐⭐⭐
+Topics: pandas merge/join operations, groupby with aggregations, sorting and ranking, string operations in pandas, datetime parsing, revenue calculations, pivot tables, matplotlib/seaborn visualizations, RFM analysis basics
+Time: 10-12 hours
+Kaggle Dataset Options (Choose ONE):
+1. **UCI Online Retail** (Recommended for beginners)
+   - Link: https://www.kaggle.com/datasets/carrie1/ecommerce-data
+   - Size: 541k transactions
+   - Great for: Sales analysis, customer segmentation
+   
+2. **Brazilian E-Commerce Public Dataset by Olist**
+   - Link: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+   - Size: 100k orders, 9 related tables
+   - Great for: Multi-table joins, complex analysis
+
+[ ] 33. SQL Practice - Database Creation
+Topics: SQL basics (SELECT, WHERE, ORDER BY, LIMIT), aggregations (COUNT, SUM, AVG, MIN, MAX), GROUP BY, HAVING, JOINs (INNER, LEFT, RIGHT, FULL), subqueries, window functions (RANK, ROW_NUMBER, PARTITION BY), CTEs (WITH clause), SQLite/PostgreSQL, sqlite3 module in Python, pandas.to_sql, SQL query optimization basics
+Time: 15 hours (spread over 2-3 weeks)
+Practice Platforms:
+- Week 1: SQLZoo (complete all modules)
+- Week 2-3: HackerRank SQL (solve 30 problems: 20 Easy, 10 Medium)
+Goal: Build SQL foundation for Month 6-8 projects
+
+
+## MONTH 6-8: ADVANCED DATA ANALYSIS
+
+**Resources:**
+- 📖 Book: "Storytelling with Data" by Cole Nussbaumer Knaflic (Chapters 1-5)
+- Khan Academy Statistics: https://www.khanacademy.org/math/statistics-probability
+- StatQuest Statistics: https://www.youtube.com/c/joshstarmer (watch basics videos)
+
+[ ] 34. Weather Data Analysis
+Topics: Time series analysis, seasonal decomposition, trends, groupby with date components (month, year), resampling (resample), aggregations over time periods, matplotlib advanced plotting, subplots
+Time: 8 hours
+Dataset: NOAA Climate Data
+- Link: https://www.ncdc.noaa.gov/cdo-web/
+- Alternative Kaggle: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data
+- Size: 5 years of data, multiple cities
+
+[ ] 35. Sales Data Reporter (SQL + Python) ⭐⭐⭐
+Topics: SQL queries (complex JOINs, multiple tables), SQLAlchemy or sqlite3, pandas.read_sql, combining SQL + pandas workflows, data transformations, business reporting, formatted output, multiple aggregations
+Time: 10 hours
+Kaggle Dataset: Sample Superstore
+- Link: https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
+- Size: 10k rows, 21 columns
+- Great for: Sales analysis, regional comparison, profit analysis
+SQL Practice: Create database from CSV, write 20+ queries
+
+[ ] 36. Customer Segmentation with K-Means ⭐⭐⭐
+Topics: scikit-learn basics (KMeans), feature scaling (StandardScaler), fit/predict workflow, clustering, elbow method, silhouette score, scatter plots with cluster colors, pandas integration with sklearn, 2D/3D visualization
+Time: 12 hours
+Kaggle Dataset: Mall Customers Segmentation
+- Link: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+- Size: 200 customers, 5 features
+- Great for: First ML project, clustering visualization
+Resource: StatQuest K-Means video: https://www.youtube.com/watch?v=4b5d3muPQmA
+
+[ ] 37. Canadian Job Market Analysis (WEB SCRAPING + POWER BI) ⭐⭐⭐⭐⭐
+Topics: Web scraping (BeautifulSoup, requests), HTML parsing, CSS selectors, data extraction from websites, pandas data cleaning, text processing (string methods, regex basics), handling missing data, Power BI (data modeling, DAX basics, dashboard design, filters, slicers, drill-downs), data visualization best practices
+Time: 15-20 hours
+Data Source: Indeed Canada, LinkedIn Jobs (web scraping)
+Tutorial: BeautifulSoup: https://realpython.com/python-web-scraping-practical-introduction/
+Power BI Tutorial: https://www.youtube.com/watch?v=AGrl-H87pRU (1 hour)
+**Why Critical:** YOUR unique story - shows initiative and market research!
+
+[ ] 38. A/B Test Analysis ⭐⭐⭐⭐
+Topics: Hypothesis testing, t-tests (scipy.stats.ttest_ind), chi-square tests, p-values, confidence intervals, statistical significance, A/B test design, conversion rate analysis, sample size considerations, pandas for data prep, visualization of results
+Time: 10-12 hours
+Kaggle Dataset Options (Choose ONE):
+1. **Marketing A/B Test**
+   - Link: https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing
+   - Size: 588 observations
+   
+2. **A/B Test Results**
+   - Link: https://www.kaggle.com/datasets/zhangluyuan/ab-testing
+   - Size: 294k observations
+
+[ ] 39. Predictive Sales Forecasting ⭐⭐⭐
+Topics: Time series forecasting, ARIMA models (statsmodels), Facebook Prophet (prophet library), linear regression (sklearn), train/test split, evaluation metrics (RMSE, MAE, MAPE), feature engineering for time series, pandas datetime operations, seasonality and trends, model comparison
+Time: 12-15 hours
+Kaggle Dataset: Store Sales - Time Series Forecasting
+- Link: https://www.kaggle.com/c/store-sales-time-series-forecasting/data
+- Size: 3M+ rows
+- Great for: Forecasting, seasonality analysis
+Resource: Facebook Prophet Docs: https://facebook.github.io/prophet/
+
+[ ] 40. Interactive Power BI Dashboard ⭐⭐⭐⭐⭐
+Topics: Power BI Desktop, data import and transformation (Power Query), data modeling (relationships, star schema), DAX formulas (calculated columns, measures, time intelligence), visualizations (charts, tables, cards, maps, KPIs), dashboard design (multiple pages, bookmarks, drill-through, tooltips), filters and slicers, publishing to Power BI Service, sharing and collaboration
+Time: 15-20 hours
+Dataset: Use Sales Data from Project 35 (Sample Superstore)
+Tool: Power BI Desktop (FREE): https://powerbi.microsoft.com/desktop/
+Tutorial: Power BI for Beginners (3 hours): https://www.youtube.com/watch?v=AGrl-H87pRU
+Publish: Power BI Service (free account) for public portfolio link
+**Portfolio Value:** ⭐⭐⭐⭐⭐ (Employers can interact with it!)
+
+
+## MONTH 9-12: JOB SEARCH + INTERVIEW PREP
+
+[ ] 41. SQL Interview Prep ⭐⭐⭐⭐⭐
+Topics: Advanced SQL (window functions, recursive CTEs, complex JOINs, self-joins, UNION/INTERSECT/EXCEPT), query optimization, indexing concepts, subquery patterns, date/time functions, string functions, conditional aggregations (CASE WHEN with SUM/COUNT), ranking and partitioning
+Time: 20-30 hours (spread over Month 9-11)
+Practice Platforms:
+- **LeetCode SQL "Top 50"** (Primary focus): https://leetcode.com/studyplan/top-sql-50/
+  - Goal: Complete all 50 problems
+  - Difficulty: 25 Easy, 20 Medium, 5 Hard
+  - Why: These are actual interview questions
+  
+- **HackerRank SQL** (Supplementary):
+  - Solve 20+ Medium/Hard problems
+  - Take SQL Intermediate & Advanced Certification Tests
+  
+**Important:** SQL is THE #1 interview topic for DA roles. Spend time here!
+
+[ ] 42. Python Coding Challenges
+Topics: Data structures (lists, sets, dictionaries, tuples), list comprehensions, lambda functions, map/filter/reduce, sorting with custom keys, string manipulation, algorithms (searching, sorting), itertools module, collections module (Counter, defaultdict, deque)
+Time: 15-20 hours (spread over Month 9-11)
+Platform: HackerRank Python: https://www.hackerrank.com/domains/python
+Goal: Solve 50 problems (30 Easy, 15 Medium, 5 Hard)
+
+[ ] 43. Domain-Specific Project (Optional)
+Topics: Depends on domain choice
+Time: 15-20 hours
+Kaggle Dataset Options (Choose ONE based on interest):
+
+**Healthcare:**
+- Diabetes Prediction: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+- Heart Disease: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+  
+**Retail:**
+- Instacart Market Basket: https://www.kaggle.com/c/instacart-market-basket-analysis
+- Black Friday Sales: https://www.kaggle.com/datasets/sdolezel/black-friday
+  
+**Social Media:**
+- Twitter Sentiment: https://www.kaggle.com/datasets/kazanova/sentiment140
+- YouTube Trending Videos: https://www.kaggle.com/datasets/datasnaek/youtube-new
+
+**Phase 1 Total: 16 projects (13 core + 3 prep)**
+**Expected Outcome: DATA ANALYST JOB SECURED ($50-65K CAD)**
+
+**Certifications to Complete (Phase 1):**
+- Google Data Analytics Certificate (Month 6-7): https://www.coursera.org/professional-certificates/google-data-analytics
+  - Cost: $39/month (~$80 total)
+  - Time: 6 months at 10 hours/week (or faster at 1.5h/day)
+
+
+═══════════════════════════════════════════════════════════════
+PHASE 2: DATA ENGINEER PATH (MONTHS 12-24)
+═══════════════════════════════════════════════════════════════
+
+**Context:** You're now employed as Data Analyst. Projects shift to DE skills.
+
+**Key Resources for Data Engineering:**
+- 🎥 FreeCodeCamp Data Engineering (2 hours): https://www.youtube.com/watch?v=qWru-b6m030
+- 🎥 Marc Lamberti - Airflow Tutorial Series: https://www.youtube.com/watch?v=K9AnJ9_ZAXE&list=PLYizQ5FvN6pvIOcOd6dFZu3lQqc6zBGp2 ⭐⭐⭐⭐⭐
+- 🎥 Seattle Data Guy Channel: https://www.youtube.com/@SeattleDataGuy
+- 📖 Book: "Fundamentals of Data Engineering" by Joe Reis (Chapters 1-8)
+- 🛠️ Docker Tutorial: https://www.youtube.com/watch?v=fqMOX6JJhGo (3 hours)
+- 📖 Airflow Official Docs: https://airflow.apache.org/docs/
+- 📖 dbt Learn: https://learn.getdbt.com/
+
+## MONTH 12-18: DATA ENGINEERING FOUNDATIONS
+
+[ ] 44. Automated ETL Pipeline ⭐⭐⭐
+Topics: ETL concepts (Extract, Transform, Load), API calls (requests library), JSON parsing, pandas transformations, database connections (psycopg2 for PostgreSQL, SQLAlchemy), SQL INSERT operations, scheduling (schedule library, cron jobs), logging module, error handling and retries, environment variables (python-dotenv)
+Time: 10-12 hours
+APIs to Use: OpenWeather API (free), News API (free), CoinGecko API (free)
+Tutorial: Real Python ETL: https://realpython.com/python-sql-libraries/
+
+[ ] 45. Cloud Data Warehouse ⭐⭐⭐
+Topics: Cloud platforms (GCP BigQuery or Snowflake), data warehousing concepts, dimensional modeling (star schema, fact/dimension tables), dbt (data build tool - models, tests, documentation), SQL transformations, materialized views, Jinja templating in dbt, version control for data transformations, data lineage
+Time: 12-15 hours
+Platform: BigQuery (GCP free tier) or Snowflake (30-day trial)
+Dataset: Load 3-5 CSV files from Phase 1 projects
+Tutorial: dbt Getting Started: https://docs.getdbt.com/docs/get-started-dbt
+
+[ ] 46. REST API Development ⭐⭐
+Topics: FastAPI framework, API design (REST principles), path parameters, query parameters, request/response models (Pydantic), async/await basics, database integration (SQLAlchemy ORM), CRUD operations via API, authentication basics (API keys), error handling (HTTP status codes), documentation (automatic OpenAPI/Swagger), deployment (Uvicorn, Heroku/Railway)
+Time: 10-12 hours
+Tutorial: FastAPI Official: https://fastapi.tiangolo.com/tutorial/
+Dataset: Use data from Phase 1 projects in PostgreSQL
+
+[ ] 47. Web Scraping + Automation
+Topics: Web scraping (BeautifulSoup or Scrapy), HTML parsing, CSS selectors, XPath (optional), handling dynamic content (Selenium basics if needed), requests with headers, rate limiting, robots.txt respect, data storage in database, scheduling automation (cron/Airflow), incremental data loading, change detection
+Time: 12-15 hours
+Tutorial: Real Python Web Scraping: https://realpython.com/python-web-scraping-practical-introduction/
+Example: Scrape job postings daily, track price changes, monitor news
+
+[ ] 48. Data Quality Framework
+Topics: Python package structure (setup.py, __init__.py, modules), custom validators, data quality checks (null checks, type validation, range checks, uniqueness, referential integrity, pattern matching with regex), pytest for testing, pytest fixtures, parameterized tests, exception handling, logging, configuration files (YAML/JSON), reusable code design, packaging
+Time: 10 hours
+Tutorial: Real Python Packaging: https://realpython.com/pypi-publish-python-package/
+
+[ ] 49. Database Performance Optimization
+Topics: SQL query optimization, EXPLAIN/ANALYZE, indexing strategies (B-tree, hash, composite indexes), query rewriting (avoiding subqueries, using CTEs efficiently), partitioning, vacuuming (PostgreSQL), query plans, database statistics, connection pooling, caching strategies
+Time: 8-10 hours
+Dataset: Load large dataset (1M+ rows) into PostgreSQL, profile slow queries
+Tutorial: PostgreSQL Indexing: https://www.postgresql.org/docs/current/indexes.html
+
+
+## MONTH 18-24: ADVANCED DATA ENGINEERING
+
+[ ] 50. Production Airflow Pipeline ⭐⭐⭐⭐⭐
+Topics: Apache Airflow (DAG definition, operators - PythonOperator, BashOperator, sensors, hooks), task dependencies (>>), Docker and docker-compose for Airflow setup, scheduling with cron expressions, XComs for inter-task communication, error handling and retries, alerting (email, Slack webhooks), backfilling, idempotency concepts, Airflow connections and variables, monitoring (Airflow UI), logging, multiple DAGs, testing DAGs with pytest
+Time: 20-25 hours
+Setup: Airflow in Docker: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/
+Tutorial: Marc Lamberti Airflow Playlist (6+ hours): https://www.youtube.com/watch?v=K9AnJ9_ZAXE&list=PLYizQ5FvN6pvIOcOd6dFZu3lQqc6zBGp2
+**Portfolio Value:** ⭐⭐⭐⭐⭐ (Differentiates you!)
+
+[ ] 51. Data Lake Implementation ⭐⭐
+Topics: Cloud storage (AWS S3 or Google Cloud Storage), data lake architecture (raw/processed/curated layers), partitioning strategies (by date/time, hive-style partitioning), file formats (Parquet, Avro, ORC), compression (gzip, snappy), metadata management, boto3 (AWS SDK) or google-cloud-storage, IAM and access control, lifecycle policies, data cataloging (AWS Glue catalog basics)
+Time: 15 hours
+Platform: AWS S3 (free tier) or GCS (free $300 credit)
+Tutorial: AWS S3 Docs: https://docs.aws.amazon.com/s3/
+
+[ ] 52. Real-Time Data Pipeline
+Topics: Streaming concepts, batch vs streaming, micro-batching, Apache Kafka basics (optional - advanced), message queues, producers and consumers, event-driven architecture, scheduling frequent batch jobs (every 5-15 min), incremental processing, change data capture (CDC) concepts, handling late-arriving data
+Time: 15-20 hours
+Option A: Batch every 5 minutes (practical for portfolio)
+Option B: Kafka setup (more complex, impressive but time-consuming)
+Use Case: Stock prices, social media mentions, IoT sensor simulation
+
+[ ] 53. Data Warehouse Design
+Topics: Dimensional modeling (Kimball methodology), star schema design, snowflake schema, fact tables (transaction, periodic snapshot, accumulating snapshot), dimension tables (SCD types 1, 2, 3), surrogate keys, grain definition, slowly changing dimensions, ERD diagramming (draw.io, Lucidchart, dbdiagram.io), DDL scripts (CREATE TABLE statements), data loading strategies (full refresh vs incremental), normalization vs denormalization, data marts
+Time: 12 hours
+Tool: draw.io (free): https://www.drawio.com/
+Deliverables: ERD diagram, DDL scripts, sample ETL, documentation
+
+[ ] 54. CI/CD for Data Pipelines
+Topics: Version control (Git advanced - branching, merging, pull requests), GitHub Actions workflows, YAML configuration for CI/CD, automated testing (pytest for data pipelines), linting (pylint, flake8, black for code formatting), continuous integration (run tests on every commit), continuous deployment (auto-deploy to staging/prod), environment management (dev/staging/prod), secrets management (GitHub Secrets), testing data pipelines, data quality tests in CI/CD, Docker in CI/CD
+Time: 10 hours
+Tutorial: GitHub Actions: https://docs.github.com/en/actions
+Example: Auto-test and deploy Airflow DAGs on git push
+
+[ ] 55. Monitoring Dashboard
+Topics: Streamlit for dashboards (Python-based), Grafana basics (optional, more complex), metrics collection (pipeline execution times, success/failure rates, data volume processed), pipeline monitoring (runtime, memory usage), data quality metrics (null rates, row counts, schema changes), alerting on anomalies, visualization of time series metrics, logging aggregation, health checks
+Time: 8-10 hours
+Tool: Streamlit (easiest): https://docs.streamlit.io/
+Tutorial: Streamlit Docs (1-2 hours to learn)
+
+**Phase 2 Total: 12 projects**
+**Expected Outcome: DATA ENGINEER JOB SECURED ($75-95K CAD)**
+
+**Certifications to Complete (Phase 2):**
+1. **dbt Analytics Engineer** (FREE!) ⭐⭐⭐⭐⭐
+   - Link: https://www.getdbt.com/certifications/analytics-engineer/
+   - Time: 2-3 weeks prep
+   - **Highly valued by employers**
+   
+2. **AWS Certified Data Analytics - Specialty** OR **Google Professional Data Engineer**
+   - AWS: $300 USD, 6-8 weeks prep
+   - GCP: $200 USD, 6-8 weeks prep
+   - Choose based on which cloud you used in projects
+
+
+═══════════════════════════════════════════════════════════════
+PHASE 3: ML ENGINEER PATH (MONTHS 24-36)
+═══════════════════════════════════════════════════════════════
+
+**Key Resources for Machine Learning:**
+- 🎥 Andrew Ng - ML Specialization (Coursera) ⭐⭐⭐⭐⭐: https://www.coursera.org/specializations/machine-learning-introduction
+  - Cost: $49/month (~$150 for 3 months)
+  - THE definitive ML course - 3 courses total
+  
+- 🎥 Fast.ai Practical Deep Learning (FREE): https://course.fast.ai/
+- 🎥 StatQuest ML Videos: https://www.youtube.com/c/joshstarmer
+- 📖 Book: "Hands-On Machine Learning" by Aurélien Géron (Chapters 1-15)
+- 📖 Book: "Machine Learning Yearning" by Andrew Ng (FREE PDF)
+- 📖 scikit-learn Docs: https://scikit-learn.org/stable/
+- 📖 TensorFlow Tutorials: https://www.tensorflow.org/tutorials
+- 📖 PyTorch Tutorials: https://pytorch.org/tutorials/
+
+## MONTH 24-30: ML FOUNDATIONS
+
+[ ] 56. Customer Churn Prediction ⭐⭐⭐
+Topics: Supervised learning (binary classification), exploratory data analysis (EDA), feature engineering, handling missing values (imputation strategies), encoding categorical variables (one-hot, label, target encoding), feature scaling (StandardScaler, MinMaxScaler, RobustScaler), train/test split, cross-validation (k-fold), models (Logistic Regression, Decision Trees, Random Forest, XGBoost, LightGBM), hyperparameter tuning (GridSearchCV, RandomizedSearchCV, Optuna), evaluation metrics (accuracy, precision, recall, F1-score, ROC-AUC, confusion matrix, classification report), imbalanced data handling (SMOTE, class weights), feature importance analysis
+Time: 12-15 hours
+Kaggle Dataset: Telco Customer Churn
+- Link: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+- Size: 7k customers, 21 features
+Tutorial: Follow Andrew Ng's ML Specialization Course 1
+
+[ ] 57. ML Model API Deployment ⭐⭐⭐
+Topics: Model serialization (pickle, joblib), FastAPI for serving predictions, Docker (Dockerfile, building images, docker-compose), containerization, REST API design for ML (request validation with Pydantic), model loading at startup, response models, async endpoints (optional), deployment platforms (Heroku, Railway, AWS Lambda, Google Cloud Run), API testing (Postman, pytest with requests), versioning models, API documentation, health checks
+Time: 10 hours
+Dataset: Use churn model from Project 56
+Tutorial: Deploy ML Model: https://www.youtube.com/watch?v=xl0N7tHiwlw
+
+[ ] 58. Time Series Forecasting ⭐⭐
+Topics: Time series analysis, stationarity (ADF test), autocorrelation (ACF, PACF plots), ARIMA models (statsmodels), SARIMA (seasonal ARIMA), Facebook Prophet (trend, seasonality, holidays, changepoints), LSTM neural networks (TensorFlow/Keras), sequence data preparation, look-back windows, evaluation metrics (RMSE, MAE, MAPE), walk-forward validation, handling seasonality and trends, exogenous variables
+Time: 15 hours
+Kaggle Dataset: Store Sales - Time Series Forecasting
+- Link: https://www.kaggle.com/c/store-sales-time-series-forecasting
+- Size: 3M+ rows, 6 time series
+Resource: Prophet Docs: https://facebook.github.io/prophet/
+
+[ ] 59. Image Classification with CNN ⭐⭐
+Topics: Convolutional Neural Networks (CNN architecture), TensorFlow/Keras or PyTorch, image data loading (ImageDataGenerator, DataLoader, tf.data), data augmentation (rotation, flip, zoom, brightness), CNN layers (Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization), activation functions (ReLU, softmax), loss functions (categorical crossentropy, sparse categorical crossentropy), optimizers (Adam, SGD, RMSprop), training loop (fit, epochs, batch size), callbacks (ModelCheckpoint, EarlyStopping, ReduceLROnPlateau, TensorBoard), transfer learning (VGG16, ResNet50, MobileNetV2, EfficientNet), fine-tuning, GPU usage basics
+Time: 12-15 hours
+Dataset: Fashion-MNIST or CIFAR-10 (built into TensorFlow/PyTorch)
+- Fashion-MNIST: 70k images, 10 classes (easier)
+- CIFAR-10: 60k images, 10 classes (harder)
+Tutorial: TensorFlow Image Classification: https://www.tensorflow.org/tutorials/images/classification
+
+[ ] 60. NLP Sentiment Analysis
+Topics: Natural Language Processing (NLP), text preprocessing (tokenization, lowercasing, stopword removal, stemming/lemmatization), NLTK or spaCy, TF-IDF vectorization, word embeddings (Word2Vec, GloVe, FastText), LSTM/GRU for text, bidirectional RNNs, Keras Tokenizer, padding sequences, embedding layers, recurrent layers, binary classification, evaluation metrics (accuracy, F1, confusion matrix), attention mechanisms (optional)
+Time: 15 hours
+Kaggle Dataset: IMDB Movie Reviews
+- Link: https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+- Size: 50k reviews (balanced positive/negative)
+Tutorial: TensorFlow Text Classification: https://www.tensorflow.org/tutorials/keras/text_classification
+
+[ ] 61. Recommendation System
+Topics: Collaborative filtering (user-based CF, item-based CF), content-based filtering, matrix factorization (SVD, ALS), Surprise library, implicit vs explicit feedback, evaluation metrics (Precision@K, Recall@K, NDCG, MAP), cold start problem (new users/items), hybrid approaches, similarity metrics (cosine similarity, Pearson correlation), sparse matrix handling
+Time: 12 hours
+Dataset: MovieLens
+- Link: https://grouplens.org/datasets/movielens/
+- Sizes: 100K (small), 1M (medium), 25M (large) - start with 100K
+Tutorial: Surprise Library Docs: https://surpriselib.com/
+
+
+## MONTH 30-36: MLOPS & PRODUCTION ML
+
+[ ] 62. MLOps Pipeline (Complete ML Lifecycle) ⭐⭐⭐⭐⭐
+Topics: MLOps principles and best practices, MLflow (experiment tracking, logging parameters/metrics/artifacts, model registry, model versioning, model stages - staging/production), tracking multiple runs, comparing experiments, artifact storage (S3, GCS), model serving, Airflow for ML pipelines (training, evaluation, deployment DAGs), automated retraining pipelines, model deployment automation, CI/CD for ML (testing ML models, data validation), A/B testing setup, rollback strategies, model governance and lineage
+Time: 25-30 hours
+Tutorial: MLOps Course: https://www.youtube.com/watch?v=Wgy1OLhcfmg
+Tools: MLflow + Airflow + Docker
+**Portfolio Value:** ⭐⭐⭐⭐⭐ (What separates you from other candidates!)
+
+[ ] 63. Model Monitoring & Drift Detection ⭐⭐⭐⭐
+Topics: Data drift (input feature distribution changes - covariate shift), concept drift (target variable relationship changes), model performance degradation over time, statistical tests (Kolmogorov-Smirnov test, Chi-square test, Population Stability Index - PSI), monitoring metrics over time, Evidently AI library, logging predictions and actuals, comparing production vs training distributions, alerting on drift (email, Slack), automated retraining triggers, dashboards for monitoring (Streamlit, Grafana), feature drift vs prediction drift
+Time: 15-20 hours
+Tutorial: Evidently AI Docs: https://docs.evidentlyai.com/
+Use: Model from Project 56 (churn) in "production" simulation
+
+[ ] 64. Feature Store Implementation ⭐⭐
+Topics: Feature store concepts and benefits, online vs offline feature serving, feature versioning and time-travel, feature engineering pipelines, Feast framework (optional, industry standard), storing features (PostgreSQL, Redis, DynamoDB), feature freshness and staleness, point-in-time correctness, feature reusability across models, metadata management (feature definitions, owners, lineage), feature discovery and documentation, monitoring feature quality
+Time: 12-15 hours
+Tutorial: Feast Quickstart: https://docs.feast.dev/getting-started/quickstart
+Alternative: Build simple version with PostgreSQL + Redis
+
+[ ] 65. A/B Testing Framework for ML Models ⭐⭐
+Topics: A/B testing for ML (experimental design), traffic splitting (random assignment, stratified sampling), control vs treatment groups (champion vs challenger), statistical significance testing (t-tests, z-tests), multi-armed bandits (optional - Thompson sampling, epsilon-greedy), tracking model versions in production, logging experiment results (predictions, user actions, conversions), calculating sample sizes (power analysis), analyzing A/B test results (confidence intervals, p-values), champion/challenger deployment pattern, gradual rollout strategies (canary deployment), dark launches
+Time: 12 hours
+Use: Deploy 2 versions of churn model, simulate traffic, compare results
+
+[ ] 66. AutoML Pipeline
+Topics: Automated Machine Learning (AutoML) concepts, PyCaret or TPOT frameworks, automated feature selection (RFE, feature importance, correlation), hyperparameter optimization (Optuna, Hyperopt, Bayesian optimization), model selection and comparison, ensemble methods (stacking, blending, voting), pipeline automation (preprocessing + model training), comparing multiple models automatically, AutoML limitations and use cases, integration with existing workflows, custom metrics
+Time: 10-12 hours
+Tool: PyCaret: https://pycaret.gitbook.io/docs/ (easiest)
+Alternative: TPOT: http://epistasislab.github.io/tpot/
+Dataset: Use Titanic or Housing dataset for quick testing
+
+[ ] 67. ML Platform Component ⭐⭐
+Topics: CHOOSE ONE FOCUS AREA:
+
+**Option A - Model Serving:**
+- Multi-model serving (hosting multiple models via single API)
+- TensorFlow Serving, TorchServe, or custom FastAPI solution
+- Model caching (Redis for frequently accessed models)
+- Load balancing across model instances
+- Latency optimization techniques
+- Batching requests for efficiency
+- Model warmup strategies
+
+**Option B - Automated Retraining:**
+- Scheduling retraining jobs (weekly, monthly, trigger-based)
+- Performance comparison (new model vs current model)
+- Automated model promotion (based on metrics thresholds)
+- Data versioning with DVC (Data Version Control)
+- Trigger-based retraining (on drift detection, performance drop, data volume)
+- Rollback capability if new model underperforms
+- Retraining pipeline orchestration with Airflow
+
+**Option C - Model Explainability:**
+- SHAP values (SHapley Additive exPlanations) for feature importance
+- LIME (Local Interpretable Model-agnostic Explanations)
+- Feature importance visualization
+- Model interpretability for stakeholders (non-technical explanations)
+- Global vs local explanations
+- Fairness metrics (demographic parity, equal opportunity)
+- Bias detection and mitigation
+- Interactive explainability dashboard (Streamlit)
+
+Time: 15-20 hours
+Choose based on: Your interest + target job descriptions
+
+**Phase 3 Total: 12 projects**
+**Expected Outcome: ML ENGINEER JOB SECURED ($95-130K CAD)**
+
+**Certifications to Complete (Phase 3):**
+1. **AWS Certified Machine Learning - Specialty**
+   - Cost: $300 USD
+   - Prep time: 8-10 weeks
+   - Tutorial: Stephane Maarek Udemy course
+   
+2. **TensorFlow Developer Certificate** (Optional)
+   - Cost: $100 USD
+   - Prep time: 4-6 weeks
+   - Tutorial: TensorFlow in Practice (Coursera)
+
+
+═══════════════════════════════════════════════════════════════
+📊 KAGGLE DATASETS SUMMARY (QUICK REFERENCE)
+═══════════════════════════════════════════════════════════════
+
+**PHASE 1: DATA ANALYST (Recommended Datasets)**
+
+Beginner-Friendly:
+1. Titanic (classification, beginner ML): https://www.kaggle.com/c/titanic
+2. Iris Dataset (classification): https://www.kaggle.com/datasets/uciml/iris
+3. Mall Customers (clustering): https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+
+Essential for DA Projects:
+4. COVID-19 (time series): https://github.com/owid/covid-19-data OR https://www.kaggle.com/datasets/imdevskp/corona-virus-report
+5. UCI Online Retail (e-commerce): https://www.kaggle.com/datasets/carrie1/ecommerce-data
+6. Sample Superstore (sales): https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
+7. BankSim1 (transactions): https://www.kaggle.com/datasets/ealaxi/banksim1
+
+Advanced:
+8. Brazilian E-Commerce by Olist: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+9. Store Sales Forecasting: https://www.kaggle.com/c/store-sales-time-series-forecasting
+
+**PHASE 3: ML ENGINEER (Recommended Datasets)**
+
+Classification:
+10. Telco Churn: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+11. Heart Disease: https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+12. IMDB Reviews (NLP): https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+Computer Vision:
+13. Fashion-MNIST: Built into TensorFlow/PyTorch
+14. CIFAR-10: Built into TensorFlow/PyTorch
+
+Recommendation:
+15. MovieLens: https://grouplens.org/datasets/movielens/
+
+**How to Find More Datasets:**
+- Kaggle Datasets: https://www.kaggle.com/datasets
+- UCI ML Repository: https://archive.ics.uci.edu/ml/
+- Google Dataset Search: https://datasetsearch.research.google.com/
+- Government of Canada Open Data: https://open.canada.ca/en/open-data
+
+
+═══════════════════════════════════════════════════════════════
+🗄️ SQL PRACTICE PLATFORMS SUMMARY (DETAILED COMPARISON)
+═══════════════════════════════════════════════════════════════
+
+**YOUR QUESTION:** "I was solving LeetCode 50 for practice 7 months back"
+**ANSWER:** Great! Continue with LeetCode for interviews, but also use others for learning.
+
+**Platform Comparison:**
+
+1. **SQLZoo** ⭐⭐⭐⭐⭐ (BEST for beginners)
+   - Link: https://sqlzoo.net/
+   - Cost: FREE
+   - Problems: 50+ interactive tutorials
+   - Difficulty: Beginner to intermediate
+   - **Best for:** Learning SQL from scratch, step-by-step lessons
+   - **Use when:** Month 5 (Week 1-2, complete all modules)
+   - **Pros:** Interactive, immediate feedback, clear progression
+   - **Cons:** Less interview-focused
+   
+2. **Mode Analytics SQL Tutorial** ⭐⭐⭐⭐⭐ (BEST for learning + practice)
+   - Link: https://mode.com/sql-tutorial/
+   - Cost: FREE
+   - Problems: 40+ lessons with embedded practice
+   - Difficulty: Beginner to advanced
+   - **Best for:** Learning SQL with real datasets, analytics focus
+   - **Use when:** Month 5 (Week 1, as primary tutorial)
+   - **Pros:** Best-structured curriculum, real-world data, business context
+   - **Cons:** Not competitive/gamified
+   
+3. **HackerRank SQL** ⭐⭐⭐⭐⭐ (BEST for structured practice)
+   - Link: https://www.hackerrank.com/domains/sql
+   - Cost: FREE (also has paid certifications)
+   - Problems: 100+ problems
+   - Difficulty: Easy, Medium, Hard (well-organized)
+   - **Best for:** Progressive skill building, earning certifications
+   - **Use when:** Month 5-8 (Weeks 2-8, solve 30-50 problems)
+   - **Pros:** Organized by topics, gamified (points, badges), SQL certifications
+   - **Cons:** Some problems are more puzzle-like than practical
+   - **Certifications:** SQL Basic, SQL Intermediate, SQL Advanced (take after practice)
+   
+4. **LeetCode SQL** ⭐⭐⭐⭐ (BEST for interview prep)
+   - Link: https://leetcode.com/problemset/database/
+   - Study Plan: https://leetcode.com/studyplan/top-sql-50/
+   - Cost: FREE (50 problems), Premium $35/month (150+ problems)
+   - Problems: 200+ SQL problems
+   - Difficulty: Easy, Medium, Hard
+   - **Best for:** Interview preparation, company-specific questions
+   - **Use when:** Month 9-11 (Interview prep phase!)
+   - **Pros:** Actual interview questions, company tags (Google, Meta, etc.), "Top SQL 50" curated list
+   - **Cons:** Less beginner-friendly, premium for full access
+   - **IMPORTANT:** Since you started 7 months ago, resume here for Month 9-11 interview prep!
+   
+5. **StrataScratch** ⭐⭐⭐⭐ (BEST for real company questions)
+   - Link: https://www.stratascratch.com/
+   - Cost: FREE tier, Premium $39/month
+   - Problems: 1000+ real interview questions
+   - Difficulty: Easy, Medium, Hard
+   - **Best for:** Seeing what FAANG companies actually ask
+   - **Use when:** Month 10-11 (supplement to LeetCode)
+   - **Pros:** Real questions from Amazon, Netflix, Google, etc.
+   - **Cons:** Some features require premium
+   
+6. **W3Schools SQL** (Quick reference only)
+   - Link: https://www.w3schools.com/sql/
+   - Cost: FREE
+   - **Best for:** Quick syntax lookup, not primary practice
+   
+7. **SQLBolt** (Beginner tutorials)
+   - Link: https://sqlbolt.com/
+   - Cost: FREE
+   - **Best for:** Absolute beginners, simple lessons
+   - **Use when:** Only if completely new to SQL
+
+**YOUR RECOMMENDED SQL LEARNING PATH (Based on your background):**
+
+**Month 5 (SQL Introduction):**
+- Week 1: Complete Mode Analytics SQL Tutorial (https://mode.com/sql-tutorial/)
+- Week 2: Complete SQLZoo modules (https://sqlzoo.net/)
+- Week 3-4: HackerRank SQL - solve 15 Easy problems
+
+**Month 6-8 (Build Proficiency):**
+- Solve 15-30 HackerRank SQL problems (mix of Easy/Medium)
+- Apply SQL in Projects 34-35 (Sales Reporter, Customer Segmentation)
+- Take HackerRank SQL Basic Certification (free)
+
+**Month 9-11 (Interview Prep - CRITICAL!):**
+- **Primary Focus:** LeetCode "Top SQL 50" study plan
+  - Link: https://leetcode.com/studyplan/top-sql-50/
+  - Goal: Complete all 50 problems (3 months = ~4 problems/week = manageable!)
+  - Split: 25 Easy (Month 9), 20 Medium (Month 10), 5 Hard (Month 11)
+  
+- **Supplementary:** HackerRank SQL Intermediate & Advanced certs
+- **Optional:** StrataScratch (if time permits, premium worth it for FAANG prep)
+
+**Total SQL Problems Target:** 80-100 problems before DA interviews
+- SQLZoo: 15-20 (learning)
+- HackerRank: 30-40 (practice)
+- LeetCode: 50 (interview focus)
+
+**Since you already started LeetCode 7 months ago:**
+- Resume where you left off
+- Focus on completing "Top SQL 50" first (these are curated for interviews)
+- Then expand to other LeetCode problems if needed
+- Use HackerRank to fill gaps in specific topics (joins, window functions, etc.)
+
+
+═══════════════════════════════════════════════════════════════
+📖 BOOK READING SCHEDULE (INTEGRATED WITH PROJECTS)
+═══════════════════════════════════════════════════════════════
+
+**Books You Have:**
+✓ Think Python - Use: Month 0-3 (reference during Phase 0 projects)
+✓ Python Crash Course - Use: Month 0-3 (project ideas and syntax)
+
+**Books to Buy/Read (In Priority Order):**
+
+**IMMEDIATE (Month 3-4):**
+1. "Fluent Python" by Luciano Ramalho
+   - Read: Chapters 1-5 (after Month 3.5 OOP)
+   - Read: Chapters 7-9 (decorators, after Month 4)
+   - Read: Chapter 14 (generators, after Month 4)
+   - Use as reference throughout DA/DE/MLE phases
+   
+**MONTH 4-12 (DATA ANALYST):**
+2. "Python for Data Analysis" by Wes McKinney
+   - Read: Chapters 4-10 (Month 4-6, while learning pandas)
+   - Reference during all Phase 1 projects
+   
+3. "Storytelling with Data" by Cole Nussbaumer Knaflic
+   - Read: Month 6-8 (before Power BI project)
+   - Apply principles in Projects 36-40
+
+**MONTH 12-24 (DATA ENGINEER):**
+4. "Fundamentals of Data Engineering" by Joe Reis
+   - Read: Chapters 1-8 (Month 12-18)
+   - Reference during Phase 2 projects
+   
+5. "Designing Data-Intensive Applications" (Optional, advanced)
+   - Read: Month 18-24 if interested in deep dive
+   - Heavy but incredibly valuable
+
+**MONTH 24-36 (ML ENGINEER):**
+6. "Hands-On Machine Learning" by Aurélien Géron
+   - Read: Chapters 1-9 (Month 24-28, basics)
+   - Read: Chapters 10-15 (Month 28-32, deep learning)
+   - Use as primary ML reference
+
+7. "Machine Learning Yearning" by Andrew Ng (FREE!)
+   - Download: https://info.deeplearning.ai/machine-learning-yearning-book
+   - Read: Month 24 (quick read, 1-2 weeks)
+   - Focus: ML project strategy
+
+**FREE ONLINE BOOKS (Bonus):**
+- "Automate the Boring Stuff": https://automatetheboringstuff.com/ (Month 0-3)
+- "Python Data Science Handbook": https://jakevdp.github.io/PythonDataScienceHandbook/ (Month 4+)
+
+
+═══════════════════════════════════════════════════════════════
+✅ SUMMARY & QUICK STATS
+═══════════════════════════════════════════════════════════════
+
+**Total Projects:** 66 projects (63 original + 3 advanced Python)
+- Phase 0 (Python Fundamentals): 20 projects
+- Phase OOP: 6 projects
+- Advanced Python (decorators, generators): 3 projects (optional)
+- Phase 1 (Data Analyst): 16 projects
+- Phase 2 (Data Engineer): 12 projects
+- Phase 3 (ML Engineer): 12 projects
+
+**Completed:** 11 projects ✓
+**Remaining:** 55 projects
+
+**Current Status:** Month 1-2, Project 11 (Simple To-Do List) ✓
+**Next Up:** Project 12 (Random Password Generator)
+
+**Time Estimates:**
+- Phase 0: 50-60 hours (3 months)
+- Phase OOP: 36-48 hours (2 weeks)
+- Advanced Python: 13-16 hours (optional, 2-3 weeks)
+- Phase 1: 150-200 hours (9 months)
+- Phase 2: 140-180 hours (12 months)
+- Phase 3: 180-240 hours (12 months)
+- **Total:** ~570-744 hours over 36 months
+
+**Key Resources:**
+- SQL Practice: Mode Analytics, SQLZoo, HackerRank, LeetCode "Top 50"
+- OOP: Corey Schafer playlist (1.5 hours)
+- pandas: Keith Galli tutorial (1 hour)
+- ML: Andrew Ng Coursera (3 months)
+- Kaggle: 15+ curated datasets for projects
+
+**Books Priority:**
+1. ✓ Think Python (you have)
+2. ✓ Python Crash Course (you have)
+3. Fluent Python (buy after Month 3)
+4. Python for Data Analysis (buy Month 4)
+5. Hands-On Machine Learning (buy Month 24)
+
+**Your Next 5 Projects:**
+[ ] 12. Random Password Generator (2 hours)
+[ ] 13. Even-Odd Number Sorter (2 hours)
+[ ] 14. File Line Counter (2 hours)
+[ ] 15. Simple CSV Data Reader (3 hours)
+[ ] 16. Basic Statistics Calculator (3-4 hours)
+
+After these 5, move to Month 2-3 projects, then OOP phase (Month 3.5)!
+
+**Remember:** 
+- You have solid books already (Think Python, Python Crash Course)
+- Use LeetCode for SQL interview prep (Month 9-11)
+- Add "Fluent Python" after OOP for decorators/generators
+- Follow this plan and you'll be ML Engineer in 36 months!
+
+Good luck! 🚀
+
+═══════════════════════════════════════════════════════════════
+END OF COMPLETE PROJECT LIST WITH RESOURCES
+═══════════════════════════════════════════════════════════════
