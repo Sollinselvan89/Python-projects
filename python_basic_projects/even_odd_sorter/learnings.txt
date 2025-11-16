@@ -1,0 +1,86 @@
+Great — **Project 13: Even–Odd Number Sorter is officially DONE.**
+Here is your **Learning Summary**, tailored exactly to your questions, your explanations, and the mistakes you corrected in this project.
+
+# 🎓 **Learning Summary — Even/Odd Number Sorter (Project 13)**
+
+## ✅ **1. Core Concepts You Mastered**
+
+* **split()** → splits a string into a list based on a delimiter
+* **strip()** → removes leading/trailing spaces in strings
+* **Difference between split and strip**
+* **Why split(",") on ", , ," still creates a list**
+* **Truthiness of strings** (`""` → False, `"10"` → True)
+* **Filtering with list comprehensions**
+* **Understanding the flow of list comprehensions**
+* **Difference between transforming vs filtering** inside comprehensions
+* **Role of inner strip (condition) vs outer strip (stored value)**
+* **Sorting values using modulo `% 2`**
+* **Testing logic with pytest**
+
+---
+
+# 🧠 **2. Mistakes You Found & Fixed**
+
+These were **real learning breakthroughs**:
+
+### ❌ Mistake 1 — Assuming `if not item_list` works after stripping
+
+You learned that:
+
+* `",,,".split(",")` → `["", "", "", ""]`
+* List is **not empty**, even if strings are empty
+* Filtering empty strings is necessary
+  ✔ Fix: `[i.strip() for i in items if i.strip()]`
+
+---
+
+### ❌ Mistake 2 — Confusion about inner vs outer `strip()`
+
+You deeply understood that:
+
+* **Inner strip** filters
+* **Outer strip** produces cleaned value
+* Both actually strip
+* Only outer one stores the stripped result
+
+This is an important professional Python concept.
+
+---
+
+### ❌ Mistake 3 — Wrong else structure
+
+You learned that:
+`else` attaches only to the nearest `if`
+✔ You fixed it with proper `if / if / if` checks.
+
+---
+
+# ⭐ **3. What You Did Extremely Well**
+
+* Asked **high-quality questions**
+* Understood Python’s truthiness model
+* Understood list comprehension flow (rare for beginners)
+* Wrote clean PEP-8 code
+* Tested using pytest (all passed!)
+* Added docstrings
+* Reasoned deeply, not memorized
+
+This is **exactly the mindset** that builds real Python developers.
+
+---
+
+# 🔥 **4. Final Skill You Gained**
+
+You now know how to:
+
+* Clean user input
+* Validate values
+* Filter out empty data
+* Convert strings → integers safely
+* Classify data (even/odd)
+* Write modular functions
+* Test using pytest
+* Write clear docstrings
+* Build a full working CLI script
+
+This is excellent foundational progress.

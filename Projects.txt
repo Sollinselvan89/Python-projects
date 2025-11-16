@@ -129,7 +129,7 @@ Time: 3-4 hours
 - Real Python File I/O: https://realpython.com/read-write-files-python/
 - Real Python Dictionaries: https://realpython.com/python-dicts/
 
-[ ] 12. Random Password Generator
+[✓] 12. Random Password Generator
 Topics: Random module (random.choice, random.randint), string module (string.ascii_letters, digits, punctuation), string concatenation, functions, list comprehensions (optional)
 Time: 2 hours
 
