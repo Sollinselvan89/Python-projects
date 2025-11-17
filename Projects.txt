@@ -133,7 +133,7 @@ Time: 3-4 hours
 Topics: Random module (random.choice, random.randint), string module (string.ascii_letters, digits, punctuation), string concatenation, functions, list comprehensions (optional)
 Time: 2 hours
 
-[ ] 13. Even-Odd Number Sorter
+[✓] 13. Even-Odd Number Sorter
 Topics: List comprehensions, filtering with conditionals, modulo operator (%), loops, conditionals, list operations
 Time: 2 hours
 
