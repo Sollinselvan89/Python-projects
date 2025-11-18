@@ -137,7 +137,7 @@ Time: 2 hours
 Topics: List comprehensions, filtering with conditionals, modulo operator (%), loops, conditionals, list operations
 Time: 2 hours
 
-[ ] 14. File Line Counter
+[✓] 14. File Line Counter
 Topics: File reading (open, read, readlines), with statement (context manager basics), loops, counting, error handling (try/except for FileNotFoundError)
 Time: 2 hours
 
