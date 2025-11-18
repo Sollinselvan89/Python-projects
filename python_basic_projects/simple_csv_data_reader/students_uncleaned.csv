@@ -1,0 +1,25 @@
+Name, AGE ,Grade ,email
+Alice,14,A,alice@example.com
+bob , sixteen ,B ,bob@mail.com
+,15,A+, anonymous@mail.com
+Diana, , C,
+Ethan,14,,ethan@mail.com
+
+Fiona,16,A ,fiona@example.com
+George,15,B, george@example.com
+Hannah  , 17 ,a ,hannah@mail.com
+Ivan,N/A,C,ivan@mail.com
+Julia,16,B,julia@mail.com
+Liam,   17  , b+ , liam@mail.com
+Mia,14,A+,mia@mail.com
+Noah,, ,noah@mail.com
+
+# Random wrong row
+not_a_name,??? ,???,??@???.com
+
+# Extra empty rows
+
+
+
+Olivia,  fifteen , A, olivia@mail.com
+
