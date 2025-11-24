@@ -1,0 +1,72 @@
+Learnings From the Simple Quiz App Project
+✔ 1. Working with Nested Data Structures
+
+You learned how to store quiz questions using:
+
+a list (multiple questions)
+
+of dictionaries (question, options, answer)
+
+containing a list inside each (options)
+
+This strengthened your understanding of real-world data structures.
+
+✔ 2. Typing With Union Types (|)
+
+You understood:
+
+why we use str | int
+
+why values in the dictionary use str | list[str]
+
+how to read union types properly
+
+version requirements (Python 3.10+)
+
+This improved your clean-code + type-hinting foundation.
+
+✔ 3. Input Validation Loops
+
+You implemented a clean while True validation:
+
+ensuring only valid choices (a/b/c/d/q)
+
+looping until valid input
+
+handling quit option (q)
+
+Improves user interaction reliability.
+
+✔ 4. Function Return Logic Without Else
+
+You learned how to correctly write:
+
+return 1 (correct)
+
+return 0 (wrong)
+
+return "q" (quit)
+
+And how to avoid the "correct and wrong both increase" mistake.
+
+✔ 5. Separation of Logic Into Functions
+
+ask_questions() handles one question
+
+run_quiz() handles the loop, scoring, and final reporting
+
+This increased your modular programming clarity.
+
+✔ 6. PEP 8 Docstrings and Type Hints
+
+You added:
+
+module description
+
+one-line docstrings for each function
+
+proper type annotations
+
+readable naming conventions
+
+This strengthened your clean-code habits.
