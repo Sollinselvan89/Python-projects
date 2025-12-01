@@ -1,0 +1,259 @@
+Here you go — **a clean, printable one-page cheat sheet** of the *Universal Data Cleaning Framework* (general principles you wanted), followed by the **rest of the items you asked for**:
+
+* 🔹 10 most useful `os` / `os.path` functions
+* 🔹 One-page cheat sheet on Lists vs Sets vs Tuples vs Dicts
+
+All in one place.
+No Q&A.
+Only pure distilled knowledge.
+
+---
+
+# 📄 **ONE-PAGE DATA CLEANING CHEAT-SHEET (UNIVERSAL PRINCIPLES)**
+
+### *Use this for ANY data-cleaning task, in any project, any language.*
+
+---
+
+# ⭐ **1. Understand the Data (Before Coding)**
+
+* Identify each field and its meaning
+* Understand formats (dates? names? numbers?)
+* Know required vs optional fields
+* Know the valid ranges, formats, and constraints
+
+**→ Never write code until you understand the data structure.**
+
+---
+
+# ⭐ **2. Define Rules Per Field (The Rulebook)**
+
+For each column, define:
+
+* **Valid** → Acceptable and normal
+* **Warning** → Missing or unusual but usable
+* **Invalid** → Impossible or structurally broken
+
+**→ Rules guide every decision in cleaning.**
+
+---
+
+# ⭐ **3. Normalize Before Validating**
+
+Normalization standardizes messy input:
+
+* trim spaces
+* lowercase/uppercase
+* collapse multiple spaces
+* convert words to numbers
+* standardize separators
+
+**→ Clean the data FIRST, then validate the cleaned version.**
+
+---
+
+# ⭐ **4. One Function Per Field (Modular Design)**
+
+Example:
+
+* `normalize_name()`
+* `normalize_age()`
+* `normalize_email()`
+
+Each function should return:
+
+```
+(cleaned_value, status)
+```
+
+Where status ∈ `{"ok", "warning", "invalid"}`.
+
+**→ Small single-purpose functions give clean architecture.**
+
+---
+
+# ⭐ **5. Combine All Field Results → Determine Row Status**
+
+Hierarchy:
+
+1. **invalid** → if ANY invalid field
+2. **warning** → if no invalid fields, but any warning
+3. **clean** → if all fields ok
+
+**→ Every row gets a clear classification.**
+
+---
+
+# ⭐ **6. Keep Raw Data for Invalid Rows**
+
+Never use cleaned values for invalid rows.
+
+* raw values help debug
+* raw values preserve original mistakes
+* raw values are the “source of truth”
+
+**→ Invalid rows must be traceable.**
+
+---
+
+# ⭐ **7. Always Output in Three Buckets**
+
+* **cleaned.csv**
+* **warnings.csv**
+* **invalid.csv**
+
+Consistent headers.
+Consistent formatting.
+
+**→ Organization is essential in data engineering.**
+
+---
+
+# ⭐ **8. Build a Clear Data-Cleaning Pipeline**
+
+Order:
+
+1. Input file
+2. Preprocess text
+3. Tokenize rows
+4. Normalize fields
+5. Validate fields
+6. Classify rows (clean/warn/invalid)
+7. Write output files
+8. Summary of results
+
+**→ Every data-cleaning script follows this 8-step pipeline.**
+
+---
+
+# ⭐ **9. Maintain Clarity with Type Annotations**
+
+Annotate everything:
+
+```python
+def normalize_age(age: str) -> tuple[int | None, str]:
+```
+
+**→ Type clarity = fewer bugs + better thinking.**
+
+---
+
+# ⭐ **10. Error Tolerance Rule**
+
+Only things that truly break meaning are **invalid**.
+Everything else is a **warning**.
+
+**→ Aim for robustness, not perfection.**
+
+---
+
+# 📄 END OF ONE-PAGE CHEAT SHEET
+
+---
+
+Now, the rest of what you asked for:
+
+---
+
+# 📌 **10 MOST USEFUL `os` & `os.path` FUNCTIONS (BEGINNER EDITION)**
+
+### ✔ File system navigation
+
+* `os.getcwd()` → get current working directory
+* `os.listdir(path)` → list files/folders
+* `os.chdir(path)` → change directory
+
+### ✔ File/Folder checks
+
+* `os.path.exists(path)` → path exists?
+* `os.path.isfile(path)` → is file?
+* `os.path.isdir(path)` → is directory?
+
+### ✔ Path manipulation
+
+* `os.path.join(a, b)` → safe path builder
+* `os.path.abspath(path)` → absolute path
+
+### ✔ File operations
+
+* `os.remove(path)` → delete file
+* `os.makedirs(path, exist_ok=True)` → create folder(s)
+
+---
+
+# 📌 **LISTS vs SETS vs TUPLES vs DICTS (CHEAT SHEET)**
+
+### 🔹 **LIST**
+
+* Ordered
+* Mutable
+* Allows duplicates
+* Indexable (`lst[0]`)
+* Use when order matters
+
+Example:
+
+```python
+["Alice", "Bob", "Charlie"]
+```
+
+---
+
+### 🔹 **TUPLE**
+
+* Ordered
+* **Immutable**
+* Allows duplicates
+* Faster than lists
+* Use for *fixed* data
+
+Example:
+
+```python
+("x", "y")
+```
+
+---
+
+### 🔹 **SET**
+
+* Unordered
+* Unique elements only
+* Very fast membership checks
+* No duplicates
+
+Example:
+
+```python
+{"apple", "banana", "apple"}  # becomes {"apple", "banana"}
+```
+
+---
+
+### 🔹 **DICTIONARY**
+
+* Key–value pairs
+* Keys must be unique
+* Fast lookup of values
+* Ideal for structured data
+
+Example:
+
+```python
+{"name": "Alice", "age": 14}
+```
+
+---
+
+# 🎉 Everything you asked for is now delivered:
+
+### ✔ One-page Data Cleaning cheat-sheet
+
+### ✔ os / os.path mini cheat-sheet
+
+### ✔ Lists vs Sets vs Tuples vs Dicts cheat-sheet
+
+### ✔ All content distilled into pure learning
+
+### ✔ No Q&A format
+

@@ -1,0 +1,118 @@
+**Summary — “How to Become an AI Engineer”**
+
+* **What AI engineering is:**
+  It’s not about inventing new ML algorithms; it’s about **integrating existing AI tools and models into software** to build real products (chatbots, voice assistants, recommendation systems, etc.). Think “software engineer + AI integrations.”
+
+* **Your daily tools as an AI engineer:**
+
+  * A **chat/LLM assistant** for research and summaries (e.g., ChatGPT, Gemini).
+  * An **AI-powered IDE/assistant** to code faster (e.g., Copilot, Cursor, Augment).
+
+* **Key integrations to learn:**
+
+  * **Hugging Face** – use pre-trained models for NLP, vision, etc., with a few lines of code.
+  * **LangChain** – connect models together, add memory, hook into databases/APIs, and build agents.
+  * Explore APIs from OpenAI, Anthropic (Claude), Google (Gemini), IBM, Cohere, Mistral.
+
+* **How to practice:**
+
+  1. Start with one LLM (e.g., via Hugging Face).
+  2. Build a simple API that uses it.
+  3. Add LangChain to chain models or add memory/tools.
+  4. Expand to other providers and features.
+
+* **Prompting matters:**
+  Treat prompts like **engineering specs**: be specific, give context and constraints, and iterate.
+  Build a personal prompt library (for tests, refactors, docs, explanations).
+
+* **Don’t skip fundamentals:**
+  You still need real software engineering skills: coding, IDEs, cloud (AWS/Azure), APIs, databases, debugging. AI **amplifies** your skills—it doesn’t replace them.
+
+**Bottom line:**
+Master AI-powered tools + learn to integrate models via APIs + practice good prompting + build on solid software fundamentals. That’s how you become an AI engineer.
+
+💻 [AI Tools for Beginners]  💻
+Claude [Best LLM for coding summarization] : https://claude.ai/login?returnTo=%2F%3F
+Augment [Best Agent (VS extension) as Coding Assistant]: https://www.augmentcode.com
+Cursor [Best AI IDE]: https://cursor.com
+HuggingFace [Best Library for LLM Models]: https://huggingface.co
+LangChain : https://www.langchain.com
+IBM watsonx Orchestrate  https://www.ibm.com/products/watsonx-...
+
+📗 [Check Out These AI/Coding Courses] 📗
+AI Python for Beginners:  https://www.deeplearning.ai/short-cou... 
+CS50 Intro to AI (with Python) : https://pll.harvard.edu/course/cs50s-...
+DSA in GO: https://www.udemy.com/course/go-data-...
+
+📒  [ZERO TO MASTERY Courses] 📒 -- this is great to level up your skills!
+AI Courses: https://links.zerotomastery.io/AICour...
+Career Paths: https://links.zerotomastery.io/Career...
+Career Path Quiz: https://links.zerotomastery.io/CPQuiz...
+
+🌈[RESOURCES]🌈[
+📒 AWS: https://aws.amazon.com/training/digital/
+🎙️Azure: https://www.udemy.com/course/microsof...
+📕Docker: https://www.udemy.com/course/docker-a...
+👾AI Cert: https://www.coursera.org/professional...
+🎆Sytem Design/Distributed Systems: https://www.educative.io/courses/grok...
+
+[CONTACT]📧
+🎙️1:1 Career Coaching!!! https://calendly.com/d/yp4-qgs-sfh/60min
+📒 Brand Collaborations: pooja@smoothmedia.co
+📚 Instagram:   / poojaduttttt  
+👾 Discord: https://nas.io/pooja-dutts-tech-commu...
+
+**Summary — “The Only 3 Programming Books You Need (and How to Use Them)”**
+
+## How to use programming books (first)
+
+* **Don’t read too early.** If you’re <1 year into coding, just code more first. Books work best *after* you’ve struggled.
+* **Read in retrospect.** Experience bad code first—then good practices will click.
+* **Prefer technical over motivational books.** Tech changes by context; fundamentals don’t.
+* **Reading beats watching.** Books fix “brain rot” and force deep thinking.
+
+---
+
+## The 3 Books
+
+### 1) **Structure and Interpretation of Computer Programs (SICP)**
+
+* Teaches **how to think** about computation, not just syntax.
+* Uses Scheme/Lisp to show programs as **compositions of ideas**.
+* You’ll write interpreters and functions that build other functions.
+* Result: code becomes cleaner and more deliberate.
+
+### 2) **Computer Systems: A Programmer’s Perspective**
+
+* Explains what happens **under the hood**.
+* From C → assembly → memory → OS → networking.
+* You learn how variables live in memory, how CPUs run code, and why pointers crash programs.
+* Result: you understand **the machine**, not just the language.
+
+### 3) **Designing Data-Intensive Applications**
+
+* Blueprint for **systems at scale**.
+* Databases, queues, replication, consistency, partitioning.
+* Shows trade-offs behind data models used by big tech.
+* Result: you think about **data flow and reliability**, not just endpoints.
+
+---
+
+## Why these three
+
+* **SICP** → trains your mind
+* **CSAPP** → explains the machine
+* **DDIA** → teaches scale
+
+They’re hard. You’ll re-read, skim, struggle—but eventually you’ll see every layer your code touches. That’s the brain rewire.
+
+---
+
+## Sponsor mention (brief)
+
+The video ends with an ad for **Whisper Flow**, a voice-to-text tool for faster messaging and snippets.
+
+---
+
+**Bottom line:**
+Code first. Read later. Go deep with these three to level up how you **think**, **debug**, and **design** as a programmer.
