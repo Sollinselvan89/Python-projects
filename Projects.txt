@@ -171,7 +171,7 @@ Time: 4 hours
 Topics: Lists of dictionaries/tuples, search functionality, CRUD operations, JSON module (json.dump, json.load), file persistence, error handling
 Time: 4-5 hours
 
-[ ] 20. Simple Shopping Cart
+[✓] 20. Simple Shopping Cart
 Topics: Lists, dictionaries, arithmetic (subtotal, total), nested data structures, grouping data, calculations with loops
 Time: 4 hours
 
@@ -207,7 +207,7 @@ Now we plan your next steps.
 
 # ⭐ **What Should You Do Next? (The Right Order)**
 
-## **1️⃣ Re-read (light revision) of *Think Python***
+## **1️⃣ Re-read (light revision) of *Think Python*** - DONE ✓
 
 NOT the entire book.
 
@@ -230,7 +230,7 @@ Concepts that felt heavy will suddenly click.
 
 ---
 
-## **2️⃣ Skim *Python Crash Course* (Part 1 only)**
+## **2️⃣ Skim *Python Crash Course* (Part 1 only)** - DONE ✓
 
 Again, you do **not** need deep reading.
 

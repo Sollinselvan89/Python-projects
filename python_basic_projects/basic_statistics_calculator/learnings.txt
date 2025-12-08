@@ -45,7 +45,7 @@ This changed your entire validation approach.
 
 You discovered:
 
-* `.sort()` modifies the list **in place** and returns **None**
+* `.sort()` modifies the list **in place** ="in place mutation" and returns **None**
 * `sorted(numbers)` returns a new list
 
 You fixed this error after debugging.

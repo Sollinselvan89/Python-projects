@@ -32,8 +32,8 @@ def user_input():
     Returns:
         tuple: grade_credit_sum (float), credit_sum (float)
     """
-    grade_credit_sum = 0.0
-    credit_sum = 0.0
+    grade_credit_sum = 0.0 # initialize
+    credit_sum = 0.0 # initialize
 
     while True:
         subjects_str = input("Hi, please enter the number of subjects: ").strip()

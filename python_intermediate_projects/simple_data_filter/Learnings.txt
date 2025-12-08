@@ -1,21 +1,3 @@
-Here is a **professional, concise commit message** + **personalized learnings**, based entirely on your actual questions, mistakes, debugging, and corrections throughout this project.
-
----
-
-# ✅ **Professional Commit Message**
-
-**feat: complete CSV Data Filter Tool with numeric & string filtering modes**
-
-* Implemented full CSV filtering workflow: file loading, column selection, filter mode selection, and filtered output generation.
-* Added robust validation for file paths, headers, empty CSVs, numeric operators (`<=`, `>=`, `==`, `<`, `>`), and string inputs.
-* Implemented operator parsing, numeric comparison logic, and case-insensitive string matching with exact and contains modes.
-* Ensured consistent return types and added typing annotations for all functions.
-* Added PEP 8–aligned docstrings, spacing, indentation, and line breaks.
-* Included output CSV writer with UTF-8 encoding and proper header handling.
-* Finalized project after debugging issues around iterator usage, return placement, KeyError avoidance, and incorrect CSV selection.
-
----
-
 # 📘 **Learnings Based on *Your Own* Work and Mistakes**
 
 ### **1. CSV DictReader is an iterator, not stored data**

@@ -26,19 +26,19 @@ def tip_percentage():
             print("Please enter a valid number")    
         elif num == 0:
             return 1.0 
-            break  
+             
         elif num ==1:
             return 1.05
-            break
+            
         elif num ==2:
             return 1.1
-            break
+            
         elif num ==3:
             return 1.15
-            break
+            
         elif num ==4:
             return 1.2
-            break
+            
     
 def main():
     print("Welcome to the tip_calculator app")

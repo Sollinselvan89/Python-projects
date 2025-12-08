@@ -18,7 +18,7 @@ def calculate_currency_conversion(*,amount,base_rate, target_rate ):
 
 
     """
-    converted_amount = amount *(target_rate/base_rate)
+    converted_amount = amount *(target_rate/base_rate) # amount = base currency amount
     return converted_amount
 
 def currency_rates():
